@@ -1,0 +1,200 @@
+// Home - Sections
+.sec-hero
+	background-color: $color-secondary
+	background-image: url('../images/hero-bg.jpg')
+	background-size: cover
+	background-position: center
+	.hero-wrap
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		flex-direction: column
+		height: 1024px
+		color: white		
+	.headline
+		font-family: 'Montserrat', sans-serif;
+		font-size: 90px
+		line-height: 90px
+	.subhead
+		font-family: 'gilroy-extrabold', sans-serif
+		font-size: 50px
+		margin: 32px 0 58px
+	.hero-animate
+		background-color: $color-primary
+		max-width: 750px
+		border-radius: 35px
+		overflow: hidden
+	@media only screen and (max-width: 40rem)
+		.hero-wrap
+			height: initial
+			padding: 100px 0
+		.headline
+			font-size: 40px
+			line-height: 40px
+		.subhead
+			font-size: 30px
+			margin: 20px 0
+
+.sec-business
+	padding: 200px 0
+	.models-wrap
+		display: flex
+		gap: 25px
+		margin-bottom: 200px
+		.model-item
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 214px
+			height: 214px
+			border-radius: 6px
+			border: 1px solid $color-secondary
+			box-shadow: 0 19px 33px 0 rgba(111, 109, 113, 0.13)
+			font-family: 'orkney-bold', sans-serif
+			font-size: 26px
+			text-align: center
+			color: $color-primary
+			@include transition(500ms)
+			img
+				display: none
+				visibility: hidden
+			&:hover
+				cursor: pointer
+			&.active
+				background-color: $color-primary
+				color: $color-secondary
+				border-top: 4px solid $color-secondary
+				img
+					display: block
+					visibility: visible
+				span
+					display: none
+		@media only screen and (max-width: 40rem)
+			margin-bottom: 100px
+			.model-item
+				width: 100%
+				img
+					max-width: 170px
+					max-height: 146px
+	.models-cont-wrap
+		.model-cont
+			display: none
+			.model-title
+				font-family: 'orkney-bold', sans-serif
+				font-size: 50px
+				color: $color-primary
+				line-height: 61px
+			.model-subtitle
+				font-family: 'orkney-bold', sans-serif
+				font-size: 40px
+				color: $color-primary
+				margin-bottom: 30px
+			.topics
+				display: flex
+				flex-direction: column
+				gap: 40px
+				margin: 0
+				li
+					margin-left: 60px
+					font-size: 20px
+					color: $color-primary
+					list-style: none
+					position: relative
+					max-width: 425px
+					&:before
+						content: ""
+						display: block
+						width: 30px
+						height: 30px
+						background-repeat: no-repeat
+						background-position: center
+						background-size: contain
+						position: absolute
+						left: -60px
+			.problem
+				display: flex
+				justify-content: space-between
+				.topics-wrap
+					position: relative
+					&:before
+						content: ""
+						display: block
+						width: 205px
+						height: 135px
+						background-image: url('../images/arrow.svg')
+						background-repeat: no-repeat
+						background-position: center
+						background-size: contain
+						position: absolute
+						left: -285px
+						top: 45px
+				.topics li:before
+					background-image: url('../images/icon-x.svg')
+			.solution
+				margin-top: 86px
+				.topics-wrap
+					display: flex
+					gap: 200px
+				.topics li:before
+					background-image: url('../images/icon-check.svg')
+				.btn
+					margin-bottom: 70px
+					width: 497px
+					height: 82px
+					font-size: 30px
+			@media only screen and (max-width: 40rem)
+				.model-title
+					font-size: 40px
+					line-height: initial
+					margin-bottom: 40px
+				.model-subtitle
+					font-size: 30px
+				.topics
+					gap: 20px
+				.problem
+					flex-direction: column
+					.topics-wrap:before
+						content: none
+				.solution
+					.topics-wrap
+						flex-direction: column
+						gap: 20px
+					.btn
+						width: initial
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
+
+.sec-partners
+	padding: 48px 0 116px
+	background-color: $color-primary
+	text-align: center
+	.sec-title
+		color: $color-secondary
+	.partners-wrap
+		display: flex
+		flex-wrap: wrap
+		gap: 80px
+		align-items: center
+		justify-content: center
+	@media only screen and (max-width: 40rem)
+		.partners-wrap
+			gap: 40px
+			a
+				width: 100%
+			img
+				width: 40%
+
+.sec-contact
+	padding: 200px 0
+	.sec-content
+		font-family: 'orkney-medium', sans-serif
+		font-size: 30px
+		line-height: 45px
+		color: $color-primary
+		width: 468px
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
+		.sec-content
+			width: 100%
+			font-size: 20px
+			line-height: initial
