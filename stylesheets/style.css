@@ -139,23 +139,34 @@ form {
   flex-direction: column;
   gap: 30px; }
   form label {
-    font-family: 'orkney-medium', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     color: #222; }
-  form input[type='text'], form input[type='email'], form input[type='tel'], form input[type='submit'] {
-    width: 500px;
+  form input[type='text'], form input[type='email'], form input[type='tel'], form input[type='submit'], form textarea {
+    width: 400px;
     height: 70px;
-    border-radius: 30px;
-    background-color: #F5F5F5;
-    border: none;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    border: 1px solid #F7F7F7;
     box-shadow: none;
     margin: 0; }
     @media only screen and (max-width: 40rem) {
-      form input[type='text'], form input[type='email'], form input[type='tel'], form input[type='submit'] {
+      form input[type='text'], form input[type='email'], form input[type='tel'], form input[type='submit'], form textarea {
         width: 100%; } }
   form input[type='submit'] {
-    font-family: 'orkney-medium', sans-serif;
-    background-color: #00B4DB;
-    color: white; }
+    font-family: "Source Sans Pro", sans-serif;
+    background: #0083b0;
+    background: linear-gradient(0deg, #0083B0 0%, #00B4DB 100%);
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 60px;
+    text-transform: uppercase; }
+  form textarea {
+    width: 100%; }
+  form .fields-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; }
 
 .sec-hero {
   background-color: #00B4DB;
@@ -197,10 +208,18 @@ form {
   background-color: #F9F9F9;
   padding: 100px 0; }
   .sec-business .model-cont {
-    display: flex;
-    gap: 100px; }
+    display: none;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px; }
+    .sec-business .model-cont.active {
+      display: flex; }
     .sec-business .model-cont img {
-      max-width: 332px; }
+      max-width: 332px;
+      height: fit-content; }
+  .sec-business .sec-content {
+    max-width: 630px; }
 
 .sec-whoweare {
   padding: 150px 0; }
@@ -215,3 +234,10 @@ form {
 
 .sec-contact {
   padding: 150px 0; }
+  .sec-contact .sec-headline {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px; }
+  .sec-contact .sec-content {
+    max-width: 830px;
+    margin: 0 auto; }

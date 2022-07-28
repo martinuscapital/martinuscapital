@@ -50,20 +50,30 @@ form
 	flex-direction: column
 	gap: 30px
 	label
-		font-family: 'orkney-medium', sans-serif
+		font-family: $font-titles
 		color: $color-primary
-	input[type='text'], input[type='email'], input[type='tel'], input[type='submit']
-		width: 500px
+	input[type='text'], input[type='email'], input[type='tel'], input[type='submit'], textarea
+		width: 400px
 		height: 70px
-		border-radius: 30px
-		background-color: #F5F5F5
+		border-radius: 4px
+		background-color: #FCFCFC
+		border: 1px solid #F7F7F7
 		// Foundation overrides
-		border: none
 		box-shadow: none
 		margin: 0
 		@media only screen and (max-width: 40rem)
 			width: 100%
 	input[type='submit']
-		font-family: 'orkney-medium', sans-serif
-		background-color: $color-secondary
+		font-family: $font-titles
+		@include gradient
 		color: white
+		width: 200px
+		height: 60px
+		border-radius: 60px
+		text-transform: uppercase
+	textarea
+		width: 100%
+	.fields-wrap
+		display: flex
+		flex-wrap: wrap
+		gap: 30px
