@@ -2,4 +2,64 @@
 
 @import "base"
 @import "components"
-@import "homepage"
+// @import "homepage"
+
+// Home - Sections
+.sec-hero
+	background-color: $color-secondary
+	background-image: url('../images/hero-bg.jpg')
+	background-size: cover
+	background-position: center
+	.hero-wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		gap: 70px
+		height: 960px
+		color: white		
+	.headline
+		font-family: $font-titles
+		font-size: 60px
+		text-align: center
+		line-height: 1.2
+		margin-bottom: 0
+
+.sec-about
+	padding: 150px 0
+	.flex
+		display: flex
+		flex-direction: column
+		gap: 200px
+	.sec-wrap
+		display: flex
+		align-items: center
+		flex-direction: row
+		gap: 100px
+		img
+			width: 450px
+		&:nth-child(2)
+			flex-direction: row-reverse
+
+.sec-business
+	background-color: #F9F9F9
+	padding: 100px 0
+	.model-cont
+		display: flex
+		gap: 100px
+		img
+			max-width: 332px
+
+.sec-whoweare
+	padding: 150px 0
+	.flex
+		display: flex
+		gap: 100px
+		justify-content: center
+	.sec-content
+		max-width: 630px
+		.sec-subhead
+			margin-bottom: 30px
+
+.sec-contact
+	padding: 150px 0

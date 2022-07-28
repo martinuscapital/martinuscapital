@@ -1,11 +1,12 @@
 // Components
-.btn
-	font-family: 'orkney-medium', sans-serif
-	background-color: $color-secondary
-	color: $color-primary
-	border-radius: 25px
-	height: 50px
-	width: 160px
+.btn-primary
+	font-family: $font-titles
+	background-color: transparent
+	color: white
+	border: 1px solid $gradient2
+	border-radius: 30px
+	height: 60px
+	width: 230px
 	display: flex
 	align-items: center
 	justify-content: center
@@ -13,19 +14,36 @@
 	@include transition(500ms)
 
 .sec-title
-	font-family: 'Montserrat', sans-serif;
-	font-size: 56px
+	display: block
+	width: 320px
+	font-family: $font-titles
+	font-size: 18px
 	color: $color-primary
-	margin-bottom: 80px
-	@media only screen and (max-width: 40rem)
-		font-size: 40px
-		margin-bottom: 40px
+	padding-bottom: 20px
+	border-bottom: 1px solid #aaa
+	text-transform: uppercase
+	margin-bottom: 100px
 
-.page-title
-	font-family: 'gilroy-extrabold'
-	font-size: 34px
+.paragraph
+	font-family: $font-text
+	font-size: 20px
+	line-height: 1.5
 	color: $color-primary
-	margin-bottom: 12px
+	margin-bottom: 0
+
+.sec-headline
+	font-family: $font-titles
+	font-size: 40px
+	color: $color-primary
+	line-height: 1.4
+	margin-bottom: 0
+
+.sec-subhead
+	font-family: $font-text
+	font-size: 23px
+	color: $color-primary
+	line-height: 1.4
+	margin-bottom: 0
 
 form
 	display: flex

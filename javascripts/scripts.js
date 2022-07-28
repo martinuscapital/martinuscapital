@@ -20,7 +20,7 @@ $(document).ready(function(){
   		dots:false,
   		center:true,
   		stagePadding:20,
-  		margin:20
+  		margin:60
     });
 
 	})(jQuery);
