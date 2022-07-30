@@ -1,22 +1,33 @@
 // Components
-.btn-primary
-	font-family: $font-titles
-	background-color: transparent
-	color: white
-	border: 1px solid $gradient2
-	border-radius: 30px
-	height: 60px
-	width: 230px
+.btn
 	display: flex
 	align-items: center
 	justify-content: center
-	flex-direction: column
+	font-family: $font-titles
+	font-weight: 700
+	font-size: 18px
+	color: white
+	text-transform: uppercase
+	height: 60px
+	width: 230px
+	border-radius: 60px
 	@include transition(500ms)
+	&--primary
+		background: transparent
+		border: 1px solid $gradient2
+		&:hover
+			background: rgba($gradient2, 0.5)
+			color: inherit
+	&--secondary
+		@include gradient
+		border: none
+		box-shadow: none
 
 .sec-title
 	display: block
 	width: 320px
 	font-family: $font-titles
+	font-weight: 700
 	font-size: 18px
 	color: $color-primary
 	padding-bottom: 20px
@@ -34,6 +45,7 @@
 .sec-headline
 	font-family: $font-titles
 	font-size: 40px
+	font-weight: 700
 	color: $color-primary
 	line-height: 1.4
 	margin-bottom: 0
@@ -52,9 +64,9 @@ form
 	label
 		font-family: $font-titles
 		color: $color-primary
-	input[type='text'], input[type='email'], input[type='tel'], input[type='submit'], textarea
+	input[type='text'], input[type='email'], input[type='tel'], textarea
 		width: 400px
-		height: 70px
+		height: 60px
 		border-radius: 4px
 		background-color: #FCFCFC
 		border: 1px solid #F7F7F7
@@ -63,17 +75,23 @@ form
 		margin: 0
 		@media only screen and (max-width: 40rem)
 			width: 100%
-	input[type='submit']
-		font-family: $font-titles
-		@include gradient
-		color: white
-		width: 200px
-		height: 60px
-		border-radius: 60px
-		text-transform: uppercase
 	textarea
 		width: 100%
+		height: 120px
 	.fields-wrap
 		display: flex
 		flex-wrap: wrap
 		gap: 30px
+
+.owl-carousel .owl-stage
+	display: flex
+	align-items: center
+	justify-content: center
+	.owl-item
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			display: block
+			width: 100%
+			max-width: fit-content

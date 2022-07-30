@@ -1,5 +1,5 @@
 // Variables
-$color-primary: #222
+$color-primary: #252525
 $color-secondary: #00B4DB
 $gradient1: #0083B0
 $gradient2: #00B4DB
@@ -7,7 +7,7 @@ $font-titles: 'Source Sans Pro', sans-serif
 $font-text: 'Lora', serif
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Source+Sans+Pro:wght@400;700&display=swap')
 
 // Mixins
 @mixin transition($time)
@@ -25,6 +25,9 @@ a, a:active, a:visited
   color: inherit
   text-decoration: none
 
+html
+  font-family: $font-text
+
 body
   font-family: $font-text
   font-weight: 300
@@ -40,6 +43,7 @@ body
   align-items: center
   justify-content: space-between
   padding: 20px 0
+  font-family: $font-titles
   font-weight: 700
   font-size: 18px
   color: white
@@ -60,43 +64,27 @@ body
     overflow-x: scroll
 
 footer
-  padding: 55px 0
+  padding: 40px 0
   background-color: $color-primary
-  color: #FEFEFE
-  border-top: 14px solid $color-secondary
+  color: #FFF
+  font-family: $font-titles
+  font-size: 14px
   .footer-wrap
     display: flex
-    flex-wrap: wrap
-    justify-content: space-between
     gap: 200px
-    article
-      display: flex
-      flex-direction: column
-      gap: 40px
-  .logo
-    width: 116px
-  .footer-title
-    font-family: 'orkney-bold', sans-serif
-    font-size: 28px
-  .footer-content-wrap
+    flex-wrap: wrap
+    align-items: flex-end
+    justify-content: center
+  .footer-content
     display: flex
+    gap: 40px
     flex-direction: column
-    &:first-child
-      gap: 24px
-    &:last-child
-      gap: 14px
-  .copyright
-    display: block
-    margin-top: 20px
-    font-size: 22px
-  @media only screen and (max-width: 40rem)
-    padding: 55px
-    .footer-wrap
-      gap: 60px
-      flex-direction: column
-      article
-        gap: 20px
-    .text-right
-      text-align: center
-    .copyright
-      margin-top: 40px
+  .logo
+    width: 186px
+  .contact-info-wrap
+    display: flex
+    gap: 5px
+    flex-direction: column
+  .contact-info
+    display: flex
+    gap: 10px
