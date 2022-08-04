@@ -15,6 +15,7 @@ $(document).ready(function(){
 
     $('.models-wrap').owlCarousel({
   		items:5,
+  		autoplay:true,
   		loop:true,
   		nav:true,
   		dots:false,

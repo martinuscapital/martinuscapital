@@ -121,7 +121,7 @@ footer {
 
 .sec-headline {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 40px;
+  font-size: 46px;
   font-weight: 700;
   color: #252525;
   line-height: 1.4;
@@ -171,7 +171,17 @@ form {
     .owl-carousel .owl-stage .owl-item img {
       display: block;
       width: 100%;
-      max-width: fit-content; }
+      max-width: fit-content;
+      max-height: 80px; }
+
+a.link {
+  color: #252525;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0; }
+
+.snippet-preview {
+  margin: 40px 0; }
 
 .sec-hero {
   background-color: #00B4DB;
@@ -225,6 +235,7 @@ form {
       margin-bottom: 100px; }
     .sec-business .model-cont img {
       max-width: 332px;
+      max-height: 150px;
       height: fit-content; }
   .sec-business .sec-content {
     max-width: 630px; }
@@ -249,3 +260,28 @@ form {
   .sec-contact .sec-content {
     max-width: 830px;
     margin: 0 auto; }
+
+.sec-email {
+  padding: 100px 0 200px; }
+  .sec-email .paragraph {
+    margin: 20px 0; }
+  .sec-email .btn {
+    font-size: 16px;
+    height: 45px;
+    width: 150px; }
+  .sec-email table {
+    border-collapse: initial;
+    width: initial;
+    margin-bottom: initial;
+    border-radius: 0; }
+  .sec-email tbody, .sec-email tfoot, .sec-email thead {
+    border: none;
+    background-color: initial; }
+  .sec-email tbody tr:nth-child(even) {
+    border-bottom: initial;
+    background-color: initial; }
+  .sec-email tbody td, .sec-email tbody th {
+    padding: initial; }
+
+.email-signature-fields {
+  margin: 40px 0 80px; }
