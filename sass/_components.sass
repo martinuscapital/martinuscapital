@@ -91,11 +91,31 @@ form
 		display: flex
 		align-items: center
 		justify-content: center
+		&:hover
+			cursor: pointer
 		img
 			display: block
 			width: 100%
 			max-width: fit-content
 			max-height: 80px
+
+.owl-nav
+	position: relative
+	top: -80px
+	.owl-prev
+		position: absolute
+		left: -20px
+	.owl-next
+		position: absolute
+		right: -20px
+
+.models-wrap.owl-theme .owl-nav [class*=owl-]
+	font-size: 30px
+	font-weight: 900
+	color: #ccc
+	&:hover
+		background: transparent
+		color: #666
 
 a.link
 	color: $color-primary
