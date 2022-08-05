@@ -58,10 +58,15 @@ body
   .logo
     width: 186px
   @media only screen and (max-width: 40rem)
+    flex-direction: column
     width: 100%
     gap: 40px
     padding: 10px
     overflow-x: scroll
+    nav
+      flex-direction: column
+      flex-wrap: wrap
+      gap: 10px
 
 footer
   padding: 40px 0
@@ -88,3 +93,7 @@ footer
   .contact-info
     display: flex
     gap: 10px
+  @media only screen and (max-width: 40rem)
+    .footer-wrap
+      flex-direction: column
+      gap: 50px

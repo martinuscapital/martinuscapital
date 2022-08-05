@@ -24,6 +24,11 @@
 		text-align: center
 		line-height: 1.2
 		margin-bottom: 0
+	@media only screen and (max-width: 40rem)
+		.hero-wrap
+			height: 640px
+		.headline
+			font-size: 35px
 
 .sec-about
 	padding: 150px 0
@@ -40,6 +45,15 @@
 			width: 450px
 		&:nth-child(2)
 			flex-direction: row-reverse
+	@media only screen and (max-width: 40rem)
+		.flex
+			gap: 50px
+		.sec-wrap
+			flex-direction: column
+			img
+				width: 100%
+			&:nth-child(2)
+				flex-direction: column
 
 .sec-business
 	background-color: #F9F9F9
@@ -60,6 +74,11 @@
 			height: fit-content
 	.sec-content
 		max-width: 630px
+	@media only screen and (max-width: 40rem)
+		.model-cont
+			.business-wrap
+				flex-direction: column
+				gap: 50px
 
 .sec-whoweare
 	padding: 150px 0
@@ -71,6 +90,10 @@
 		max-width: 630px
 		.sec-subhead
 			margin-bottom: 30px
+	@media only screen and (max-width: 40rem)
+		.flex
+			flex-direction: column
+			gap: 50px
 
 .sec-contact
 	padding: 150px 0

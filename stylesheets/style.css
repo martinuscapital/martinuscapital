@@ -40,10 +40,15 @@ body {
     width: 186px; }
   @media only screen and (max-width: 40rem) {
     .header {
+      flex-direction: column;
       width: 100%;
       gap: 40px;
       padding: 10px;
-      overflow-x: scroll; } }
+      overflow-x: scroll; }
+      .header nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px; } }
 
 footer {
   padding: 40px 0;
@@ -70,6 +75,10 @@ footer {
   footer .contact-info {
     display: flex;
     gap: 10px; }
+  @media only screen and (max-width: 40rem) {
+    footer .footer-wrap {
+      flex-direction: column;
+      gap: 50px; } }
 
 .btn {
   display: flex;
@@ -159,6 +168,9 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 30px; }
+  @media only screen and (max-width: 40rem) {
+    form label {
+      width: 100%; } }
 
 .owl-carousel .owl-stage {
   display: flex;
@@ -223,6 +235,11 @@ a.link {
     text-align: center;
     line-height: 1.2;
     margin-bottom: 0; }
+  @media only screen and (max-width: 40rem) {
+    .sec-hero .hero-wrap {
+      height: 640px; }
+    .sec-hero .headline {
+      font-size: 35px; } }
 
 .sec-about {
   padding: 150px 0; }
@@ -239,6 +256,15 @@ a.link {
       width: 450px; }
     .sec-about .sec-wrap:nth-child(2) {
       flex-direction: row-reverse; }
+  @media only screen and (max-width: 40rem) {
+    .sec-about .flex {
+      gap: 50px; }
+    .sec-about .sec-wrap {
+      flex-direction: column; }
+      .sec-about .sec-wrap img {
+        width: 100%; }
+      .sec-about .sec-wrap:nth-child(2) {
+        flex-direction: column; } }
 
 .sec-business {
   background-color: #F9F9F9;
@@ -259,6 +285,10 @@ a.link {
       height: fit-content; }
   .sec-business .sec-content {
     max-width: 630px; }
+  @media only screen and (max-width: 40rem) {
+    .sec-business .model-cont .business-wrap {
+      flex-direction: column;
+      gap: 50px; } }
 
 .sec-whoweare {
   padding: 150px 0; }
@@ -270,6 +300,10 @@ a.link {
     max-width: 630px; }
     .sec-whoweare .sec-content .sec-subhead {
       margin-bottom: 30px; }
+  @media only screen and (max-width: 40rem) {
+    .sec-whoweare .flex {
+      flex-direction: column;
+      gap: 50px; } }
 
 .sec-contact {
   padding: 150px 0; }

@@ -14,15 +14,21 @@ $(document).ready(function(){
 		});
 
     $('.models-wrap').owlCarousel({
-  		items:5,
   		autoplay:true,
-  		mouseDrag:false,
   		loop:true,
-  		nav:true,
   		dots:false,
   		center:true,
   		stagePadding:20,
-  		margin:60
+  		margin:60,
+  		0 : {
+  			nav:false,
+        items:1
+	    },
+	    640 : {
+  			mouseDrag:false,
+  			nav:true,
+        items:5
+	    }
     });
 
 	})(jQuery);
