@@ -31,5 +31,9 @@ $(document).ready(function(){
 	    }
     });
 
+    $('.menu-icon').click( function() {
+    	$('header').toggleClass('menu-mobile-active');
+    });
+
 	})(jQuery);
 });

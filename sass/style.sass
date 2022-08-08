@@ -26,7 +26,7 @@
 		margin-bottom: 0
 	@media only screen and (max-width: 40rem)
 		.hero-wrap
-			height: 640px
+			height: 560px
 		.headline
 			font-size: 35px
 
@@ -46,12 +46,15 @@
 		&:nth-child(2)
 			flex-direction: row-reverse
 	@media only screen and (max-width: 40rem)
+		padding: 100px 0
 		.flex
 			gap: 50px
 		.sec-wrap
 			flex-direction: column
+			gap: 50px
 			img
-				width: 100%
+				width: 90%
+				margin: auto
 			&:nth-child(2)
 				flex-direction: column
 
@@ -91,9 +94,13 @@
 		.sec-subhead
 			margin-bottom: 30px
 	@media only screen and (max-width: 40rem)
+		padding: 100px 0
 		.flex
 			flex-direction: column
 			gap: 50px
+		img
+			width: 90%
+			margin: auto
 
 .sec-contact
 	padding: 150px 0
@@ -104,6 +111,8 @@
 	.sec-content
 		max-width: 830px
 		margin: 0 auto
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
 
 // Assinaturas de e-mail
 .sec-email

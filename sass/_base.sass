@@ -37,7 +37,13 @@ body
     color: inherit
     text-decoration: none
 
+header.menu-mobile-active
+  @media only screen and (max-width: 40rem)
+    @include transition(500ms)
+    background-color: rgba(black, 0.2)
+
 .header
+  position: relative
   background-color: transparent
   display: flex
   align-items: center
@@ -58,11 +64,10 @@ body
   .logo
     width: 186px
   @media only screen and (max-width: 40rem)
-    flex-direction: column
     width: 100%
     gap: 40px
     padding: 10px
-    overflow-x: scroll
+    flex-wrap: wrap
     nav
       flex-direction: column
       flex-wrap: wrap
@@ -97,3 +102,8 @@ footer
     .footer-wrap
       flex-direction: column
       gap: 50px
+      align-items: center
+    .footer-content
+      align-items: center
+    .address
+      text-align: center
