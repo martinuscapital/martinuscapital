@@ -14,8 +14,8 @@ $(document).ready(function(){
 		});
 
     $('.models-wrap').owlCarousel({
-  		autoplay:true,
   		loop:true,
+  		nav:true,
   		dots:false,
   		center:true,
   		stagePadding:20,
