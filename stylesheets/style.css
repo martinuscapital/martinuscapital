@@ -211,7 +211,7 @@ form {
     .owl-carousel .owl-stage .owl-item img {
       display: block;
       width: 100%;
-      max-width: fit-content;
+      max-width: 200px;
       max-height: 80px;
       filter: grayscale(100%); }
 
