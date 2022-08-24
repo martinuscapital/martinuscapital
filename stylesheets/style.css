@@ -84,7 +84,7 @@ footer {
   footer .contact-info {
     display: flex;
     gap: 10px; }
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 60rem) {
     footer .footer-wrap {
       flex-direction: column;
       gap: 50px;
@@ -184,7 +184,7 @@ form {
     border: 1px solid #F7F7F7;
     box-shadow: none;
     margin: 0; }
-    @media only screen and (max-width: 40rem) {
+    @media only screen and (max-width: 60rem) {
       form input[type='text'], form input[type='email'], form input[type='tel'], form textarea {
         width: 100%; } }
   form textarea {
@@ -194,7 +194,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 30px; }
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 60rem) {
     form label {
       width: 100%; } }
 
@@ -285,7 +285,7 @@ a.link {
     text-align: center;
     line-height: 1.2;
     margin-bottom: 0; }
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 60rem) {
     .sec-hero .hero-wrap {
       height: 560px; }
     .sec-hero .headline {
@@ -306,7 +306,7 @@ a.link {
       width: 450px; }
     .sec-about .sec-wrap:nth-child(2) {
       flex-direction: row-reverse; }
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 60rem) {
     .sec-about {
       padding: 100px 0; }
       .sec-about .flex {
@@ -316,7 +316,7 @@ a.link {
         gap: 50px; }
         .sec-about .sec-wrap img {
           width: 90%;
-          margin: auto; }
+          max-width: fit-content; }
         .sec-about .sec-wrap:nth-child(2) {
           flex-direction: column; } }
 
@@ -354,7 +354,7 @@ a.link {
     max-width: 630px; }
     .sec-whoweare .sec-content .sec-subhead {
       margin-bottom: 30px; }
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 60rem) {
     .sec-whoweare {
       padding: 100px 0; }
       .sec-whoweare .flex {
@@ -362,7 +362,7 @@ a.link {
         gap: 50px; }
       .sec-whoweare img {
         width: 90%;
-        margin: auto; } }
+        max-width: fit-content; } }
 
 .sec-contact {
   padding: 150px 0; }
@@ -373,9 +373,9 @@ a.link {
   .sec-contact .sec-content {
     max-width: 830px;
     margin: 0 auto; }
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 60rem) {
     .sec-contact {
-      padding: 100px 0; } }
+      padding: 0 0 100px; } }
 
 .sec-email {
   padding: 100px 0 200px; }
