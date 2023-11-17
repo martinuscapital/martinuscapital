@@ -401,3 +401,22 @@ a.link {
 
 .email-signature-fields {
   margin: 40px 0 80px; }
+
+
+/* Google translate */
+.grid-translate {
+    float: right;
+    padding: 30px;
+}
+
+#google_translate_element {
+    display: none;
+}
+.goog-te-banner-frame {
+    display: none !important;
+}
+body {
+    position: static !important;
+    top: 0 !important;
+}
+
