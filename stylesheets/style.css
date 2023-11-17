@@ -406,7 +406,7 @@ a.link {
 /* Google translate */
 .grid-translate {
     float: right;
-    padding: 30px;
+    /*padding: 30px;*/
 }
 
 #google_translate_element {
