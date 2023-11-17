@@ -292,7 +292,7 @@ a.link {
       font-size: 35px; } }
 
 .sec-about {
-  padding: 150px 0; }
+  padding: 100px 0; }
   .sec-about .flex {
     display: flex;
     flex-direction: column;
@@ -345,7 +345,7 @@ a.link {
       gap: 50px; } }
 
 .sec-whoweare {
-  padding: 150px 0; }
+  padding: 100px 0; }
   .sec-whoweare .flex {
     display: flex;
     gap: 100px;
@@ -365,7 +365,7 @@ a.link {
         max-width: fit-content; } }
 
 .sec-contact {
-  padding: 150px 0; }
+  padding: 50px 0; }
   .sec-contact .sec-headline {
     text-align: center;
     font-size: 28px;
