@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Martinus Capital - Investimentos em Inovação, Tecnologia e Empreendimento | Venture Capital</title>
+    <meta name="title" content="Martinus Capital - Investimentos em Inovação, Tecnologia e Empreendimento">
+    <meta name="description" content="Martinus Capital é uma empresa de venture capital com foco em software B2B e B2C. Capital + Tempo + Experiência para empresas que buscam crescimento acelerado. Investidor em Nexaas, Zeedog, Ploomes, LinkAPI, ContabilOne e mais de 35 empresas de tecnologia.">
+    <meta name="keywords" content="martinus capital, venture capital brasil, investimento tecnologia, software B2B, B2C, jander sousa martins, nexaas, investimento inovação, startup, fintech, saas, ecommerce">
+    <meta name="author" content="Martinus Capital">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Canonical & Alternate -->
+    <link rel="canonical" href="https://martinuscapital.com.br/">
+    <link rel="alternate" hreflang="pt-BR" href="https://martinuscapital.com.br/">
+    <link rel="alternate" hreflang="en" href="https://martinuscapital.com.br/en">
+    <link rel="alternate" hreflang="es" href="https://martinuscapital.com.br/es">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martinuscapital.com.br/">
+    <meta property="og:title" content="Martinus Capital - Construindo o Futuro Digital">
+    <meta property="og:description" content="Investindo em inovação, tecnologia e empreendedorismo">
+    <meta property="og:image" content="https://martinuscapital.com.br/images/martinus-capital-thumb.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Martinus Capital - Construindo o Futuro Digital">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Source+Sans+Pro:wght@400;700;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #1a2b3c;
+            --navy-light: #243447;
+            --cyan: #00b4d8;
+            --cyan-bright: #0dcaf0;
+            --dark: #2c3e50;
+            --white: #ffffff;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: "Lora", serif;
+            color: var(--dark);
+            background: var(--navy);
+            overflow-x: hidden;
+        }
+
+        /* Grid Background */
+        .grid-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 180, 216, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 180, 216, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Floating Header */
+        .floating-header {
+            position: fixed;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: rgba(26, 43, 60, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            padding: 20px 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-logo {
+            width: 120px;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .header-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--cyan);
+            transition: width 0.3s;
+        }
+
+        .header-nav a:hover {
+            color: var(--cyan);
+        }
+
+        .header-nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-lang {
+            display: flex;
+            gap: 10px;
+            padding-left: 40px;
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 11px;
+            transition: all 0.3s;
+        }
+
+        .lang-btn.active {
+            background: var(--cyan);
+            border-color: var(--cyan);
+        }
+
+        /* Main Content */
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 180px 80px 200px 80px;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            height: 150%;
+            opacity: 0.1;
+        }
+
+        .hero-grid svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1200px;
+        }
+
+        .hero-badge {
+            display: none;
+        }
+
+        .hero h1 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 120px;
+            font-weight: 900;
+            color: white;
+            line-height: 1;
+            margin-bottom: 30px;
+            letter-spacing: -3px;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--cyan-bright) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+
+        .cta-primary {
+            display: inline-block;
+            padding: 20px 50px;
+            background: var(--cyan);
+            color: white;
+            border: none;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-primary:hover::before {
+            left: 100%;
+        }
+
+        .cta-primary:hover {
+            background: var(--cyan-bright);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 180, 216, 0.4);
+        }
+
+        .cta-secondary {
+            display: inline-block;
+            padding: 20px 50px;
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--cyan);
+            color: var(--cyan);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 80px;
+            background: rgba(26, 43, 60, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            padding: 40px 80px;
+            border-radius: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--cyan);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        /* Section Base */
+        section {
+            position: relative;
+            padding: 150px 80px;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 100px;
+        }
+
+        .section-label {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 14px;
+            color: var(--cyan);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 72px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+
+        .section-description {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 700px;
+        }
+
+        /* About Section */
+        .about {
+            background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 100%);
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .pillar-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 180, 216, 0.2);
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cyan), var(--cyan-bright));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .pillar-card:hover {
+            background: rgba(0, 180, 216, 0.05);
+            border-color: var(--cyan);
+            transform: translateY(-10px);
+        }
+
+        .pillar-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pillar-number {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 80px;
+            font-weight: 900;
+            color: rgba(0, 180, 216, 0.1);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .pillar-title {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .pillar-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background: var(--navy-light);
+        }
+
+        .portfolio-tabs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 60px;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .tab-btn.active {
+            background: rgba(0, 180, 216, 0.2);
+            border-color: var(--cyan);
+            color: var(--cyan);
+        }
+
+        .tab-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--cyan);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .tab-btn.active::after {
+            transform: scaleX(1);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .company-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 180, 216, 0.2);
+            padding: 40px;
+            transition: all 0.3s;
+            position: relative;
+            display: none;
+        }
+
+        .company-card.show {
+            display: block;
+            animation: slideInUp 0.6s;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .company-card:hover {
+            background: rgba(0, 180, 216, 0.1);
+            border-color: var(--cyan);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 180, 216, 0.2);
+        }
+
+        .company-logo {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .company-logo img {
+            max-width: 120px;
+            max-height: 60px;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: all 0.3s;
+        }
+
+        .company-card:hover .company-logo img {
+            filter: none;
+            opacity: 1;
+        }
+
+        .company-tag {
+            display: inline-block;
+            padding: 5px 15px;
+            background: rgba(0, 180, 216, 0.2);
+            color: var(--cyan);
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .company-name {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .company-description {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .company-link {
+            color: var(--cyan);
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .company-link:hover {
+            gap: 12px;
+        }
+
+        /* Team Section */
+        .team {
+            background: var(--navy);
+        }
+
+        .team-showcase {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .team-image-wrap {
+            position: relative;
+        }
+
+        .team-image-wrap::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid var(--cyan);
+            z-index: 0;
+        }
+
+        .team-image {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .team-details h3 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 56px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .team-details h4 {
+            font-size: 24px;
+            color: var(--cyan);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .team-bio {
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 25px;
+        }
+
+        .team-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .highlight-tag {
+            padding: 12px 25px;
+            background: rgba(0, 180, 216, 0.1);
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            color: var(--cyan);
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(180deg, var(--navy-light) 0%, var(--navy) 100%);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 180, 216, 0.2);
+            padding: 60px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .form-field label {
+            display: block;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            color: var(--cyan);
+            margin-bottom: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-field input,
+        .form-field textarea {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: "Lora", serif;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .form-field input:focus,
+        .form-field textarea:focus {
+            outline: none;
+            border-color: var(--cyan);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .form-field textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 20px;
+            background: var(--cyan);
+            color: white;
+            border: none;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--cyan-bright);
+            box-shadow: 0 10px 40px rgba(0, 180, 216, 0.4);
+        }
+
+        .contact-info h3 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 36px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .info-item {
+            margin-bottom: 40px;
+            padding-left: 40px;
+            border-left: 2px solid var(--cyan);
+        }
+
+        .info-label {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .info-value {
+            font-size: 20px;
+            color: var(--cyan);
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            border-top: 1px solid rgba(0, 180, 216, 0.2);
+            padding: 60px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            width: 150px;
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+
+        /* Mobile */
+        @media (max-width: 1024px) {
+            body {
+                padding-top: 70px;
+            }
+
+            .floating-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 0;
+                padding: 15px 20px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border: none;
+                border-bottom: 1px solid rgba(0, 180, 216, 0.3);
+            }
+
+            .header-logo {
+                width: 100px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .header-lang {
+                padding-left: 0;
+                border-left: none;
+                gap: 8px;
+            }
+
+            .lang-btn {
+                padding: 6px 12px;
+                font-size: 10px;
+            }
+
+            .hero {
+                min-height: 100vh;
+                padding: 40px 20px 40px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .hero-grid {
+                display: none;
+            }
+
+            .hero-content {
+                margin-bottom: 0;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+                margin-bottom: 20px;
+                letter-spacing: -1px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            .hero-cta-group {
+                flex-direction: column;
+                gap: 12px;
+                margin-bottom: 40px;
+            }
+
+            .cta-primary,
+            .cta-secondary {
+                width: 100%;
+                padding: 16px 30px;
+                font-size: 13px;
+            }
+
+            .stats-bar {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                transform: none;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                padding: 20px;
+                margin-top: 0;
+            }
+
+            .stat-item {
+                padding: 15px;
+            }
+
+            .stat-number {
+                font-size: 28px;
+            }
+
+            .stat-label {
+                font-size: 9px;
+                margin-top: 5px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .section-header {
+                margin-bottom: 50px;
+            }
+
+            .section-label {
+                font-size: 11px;
+                margin-bottom: 15px;
+            }
+
+            .section-title {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            .section-description {
+                font-size: 15px;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .pillar-card {
+                padding: 25px;
+            }
+
+            .pillar-number {
+                font-size: 50px;
+                margin-bottom: 15px;
+            }
+
+            .pillar-title {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .pillar-text {
+                font-size: 14px;
+            }
+
+            .portfolio-tabs {
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 40px;
+            }
+
+            .tab-btn {
+                padding: 10px 18px;
+                font-size: 11px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .company-card {
+                padding: 25px;
+            }
+
+            .company-logo {
+                height: 50px;
+                margin-bottom: 20px;
+            }
+
+            .company-logo img {
+                max-width: 100px;
+                max-height: 50px;
+            }
+
+            .company-name {
+                font-size: 18px;
+            }
+
+            .company-description {
+                font-size: 13px;
+            }
+
+            .team-showcase {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .team-image-wrap::before {
+                top: -10px;
+                left: -10px;
+                right: 10px;
+                bottom: 10px;
+            }
+
+            .team-details h3 {
+                font-size: 32px;
+            }
+
+            .team-details h4 {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            .team-bio {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+
+            .team-highlights {
+                gap: 10px;
+                margin-top: 30px;
+            }
+
+            .highlight-tag {
+                padding: 10px 18px;
+                font-size: 12px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-info h3 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .info-item {
+                margin-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .info-value {
+                font-size: 16px;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin-bottom: 15px;
+            }
+
+            .form-field {
+                margin-bottom: 15px;
+            }
+
+            .form-field input,
+            .form-field textarea {
+                padding: 12px;
+                font-size: 15px;
+            }
+
+            .submit-btn {
+                padding: 16px;
+                font-size: 14px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                padding: 30px 20px;
+            }
+
+            .footer-logo {
+                width: 120px;
+            }
+
+            .footer-text {
+                font-size: 12px;
+            }
+        }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Martinus Capital",
+        "url": "https://martinuscapital.com.br",
+        "logo": "https://martinuscapital.com.br/images/logos/logo-martinus-capital.svg",
+        "description": "Construindo o futuro digital através de investimentos em inovação, tecnologia e empreendedorismo",
+        "foundingDate": "2011",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. do Rócio, 199",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Floating Header -->
+    <header class="floating-header">
+        <img src="images/logos/logo-martinus-capital.svg" alt="Martinus Capital" class="header-logo">
+        <nav class="header-nav">
+            <a href="#about" data-i18n="nav.about">Essência</a>
+            <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+            <a href="#team" data-i18n="nav.team">Liderança</a>
+            <a href="#contact" data-i18n="nav.contact">Contato</a>
+        </nav>
+        <div class="header-lang">
+            <button class="lang-btn active" data-lang="pt">PT</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-grid">
+                <svg viewBox="0 0 1000 1000">
+                    <defs>
+                        <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                            <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0,180,216,0.3)" stroke-width="1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="1000" height="1000" fill="url(#grid)" />
+                </svg>
+            </div>
+            
+            <div class="hero-content">
+                <h1>
+                    <span data-i18n="hero.title1">Construindo</span><br>
+                    <span class="gradient-text" data-i18n="hero.title2">o Futuro Digital</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Investindo em inovação, tecnologia e empreendedorismo
+                </p>
+                
+                <div class="hero-cta-group">
+                    <a href="#portfolio" class="cta-primary" data-i18n="hero.cta1">
+                        Explorar Ecossistema
+                    </a>
+                    <a href="#contact" class="cta-secondary" data-i18n="hero.cta2">
+                        Iniciar Conexão
+                    </a>
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number">35+</span>
+                    <span class="stat-label" data-i18n="stats.companies">Empresas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label" data-i18n="stats.years">Anos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label" data-i18n="stats.focus">Foco Digital</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-label" data-i18n="about.label">// Pilares Fundamentais</div>
+                    <h2 class="section-title" data-i18n="about.title">Arquitetura de Valor</h2>
+                    <p class="section-description" data-i18n="about.description">
+                        Estruturamos investimentos através de três pilares tecnológicos fundamentais
+                    </p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-number">01</div>
+                        <h3 class="pillar-title" data-i18n="about.pillar1.title">Visão Estratégica</h3>
+                        <p class="pillar-text" data-i18n="about.pillar1.text">
+                            Comitês estratégicos com influência direta em inovação, tecnologia e estratégia de mercado
+                        </p>
+                    </div>
+                    
+                    <div class="pillar-card">
+                        <div class="pillar-number">02</div>
+                        <h3 class="pillar-title" data-i18n="about.pillar2.title">Execução de Alta Performance</h3>
+                        <p class="pillar-text" data-i18n="about.pillar2.text">
+                            Comprometimento com resultados através de governança, ética e geração de valor sustentável
+                        </p>
+                    </div>
+                    
+                    <div class="pillar-card">
+                        <div class="pillar-number">03</div>
+                        <h3 class="pillar-title" data-i18n="about.pillar3.title">Escalabilidade Contínua</h3>
+                        <p class="pillar-text" data-i18n="about.pillar3.text">
+                            Parcerias de longo prazo construindo empresas preparadas para durar através da inovação
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-label" data-i18n="portfolio.label">// Ecossistema Digital</div>
+                    <h2 class="section-title" data-i18n="portfolio.title">Portfolio Tecnológico</h2>
+                    <p class="section-description" data-i18n="portfolio.description">
+                        35+ empresas transformando mercados através de tecnologia de ponta
+                    </p>
+                </div>
+
+                <div class="portfolio-tabs">
+                    <button class="tab-btn active" data-filter="all" data-i18n="portfolio.all">Todas</button>
+                    <button class="tab-btn" data-filter="fintech" data-i18n="portfolio.fintech">Fintech</button>
+                    <button class="tab-btn" data-filter="saas" data-i18n="portfolio.saas">SaaS</button>
+                    <button class="tab-btn" data-filter="ecommerce" data-i18n="portfolio.ecommerce">E-commerce</button>
+                    <button class="tab-btn" data-filter="tech" data-i18n="portfolio.tech">Tech</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolioGrid"></div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team" id="team">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-label" data-i18n="team.label">// Arquiteto do Futuro</div>
+                    <h2 class="section-title" data-i18n="team.title">Liderança Visionária</h2>
+                    <p class="section-description" data-i18n="team.description">
+                        35 anos construindo o futuro da tecnologia brasileira
+                    </p>
+                </div>
+
+                <div class="team-showcase">
+                    <div class="team-image-wrap">
+                        <img src="images/jander.png" alt="Jander Sousa Martins" class="team-image">
+                    </div>
+                    
+                    <div class="team-details">
+                        <h3>Jander Sousa Martins</h3>
+                        <h4 data-i18n="team.role">Fundador & Arquiteto Digital</h4>
+                        <p class="team-bio" data-i18n="team.bio1">
+                            Fundador da Nexaas com mais de 35 anos construindo a infraestrutura digital do futuro. Pioneiro em tecnologias que transformaram a indústria brasileira de software.
+                        </p>
+                        <p class="team-bio" data-i18n="team.bio2">
+                            Criador da Mastersaf, adquirida pela Thomson Reuters em 2011. Investidor ativo em mais de 30 empresas que estão redefinindo seus mercados através da tecnologia.
+                        </p>
+                        
+                        <div class="team-highlights">
+                            <span class="highlight-tag">Nexaas</span>
+                            <span class="highlight-tag">Zeedog</span>
+                            <span class="highlight-tag">Ploomes</span>
+                            <span class="highlight-tag">LinkAPI</span>
+                            <span class="highlight-tag">ContabilOne</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-label" data-i18n="contact.label">// Iniciar Conexão</div>
+                    <h2 class="section-title" data-i18n="contact.title">Construa Conosco</h2>
+                    <p class="section-description" data-i18n="contact.description">
+                        Entre em contato para construir o futuro digital juntos
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 data-i18n="contact.info.title">Canais de Conexão</h3>
+                        
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="contact.info.email">Email</div>
+                            <div class="info-value">investidas@martinuscapital.com.br</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="contact.info.phone">Telefone</div>
+                            <div class="info-value">+55 (21) 97905-0000</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="contact.info.location">Localização</div>
+                            <div class="info-value">São Paulo, Brasil</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label data-i18n="contact.form.name">Nome</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-field">
+                                <label data-i18n="contact.form.company">Empresa</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label data-i18n="contact.form.email">Email</label>
+                            <input type="email" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label data-i18n="contact.form.message">Mensagem</label>
+                            <textarea required></textarea>
+                        </div>
+                        
+                        <button class="submit-btn" data-i18n="contact.form.submit">
+                            Transmitir Mensagem
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <img src="images/logos/logo-martinus-capital.svg" alt="Martinus Capital" class="footer-logo">
+        <div class="footer-text" data-i18n="footer.copyright">
+            © 2025 Martinus Capital • Construindo o Futuro Digital
+        </div>
+    </footer>
+
+    <script>
+        // Translations
+        const translations = {
+            pt: {
+                nav: { about: 'Essência', portfolio: 'Portfolio', team: 'Liderança', contact: 'Contato' },
+                hero: {
+                    title1: 'Construindo',
+                    title2: 'o Futuro Digital',
+                    subtitle: 'Investindo em inovação, tecnologia e empreendedorismo',
+                    cta1: 'Explorar Ecossistema',
+                    cta2: 'Iniciar Conexão'
+                },
+                stats: { companies: 'Empresas', years: 'Anos', focus: 'Foco Digital' },
+                about: {
+                    label: '// Pilares Fundamentais',
+                    title: 'Arquitetura de Valor',
+                    description: 'Estruturamos investimentos através de três pilares tecnológicos fundamentais',
+                    pillar1: { title: 'Visão Estratégica', text: 'Comitês estratégicos com influência direta em inovação, tecnologia e estratégia de mercado' },
+                    pillar2: { title: 'Execução de Alta Performance', text: 'Comprometimento com resultados através de governança, ética e geração de valor sustentável' },
+                    pillar3: { title: 'Escalabilidade Contínua', text: 'Parcerias de longo prazo construindo empresas preparadas para durar através da inovação' }
+                },
+                portfolio: {
+                    label: '// Ecossistema Digital',
+                    title: 'Portfolio Tecnológico',
+                    description: '35+ empresas transformando mercados através de tecnologia de ponta',
+                    all: 'Todas', fintech: 'Fintech', saas: 'SaaS', ecommerce: 'E-commerce', tech: 'Tech'
+                },
+                team: {
+                    label: '// Arquiteto do Futuro',
+                    title: 'Liderança Visionária',
+                    description: '35 anos construindo o futuro da tecnologia brasileira',
+                    role: 'Fundador & Arquiteto Digital',
+                    bio1: 'Fundador da Nexaas com mais de 35 anos construindo a infraestrutura digital do futuro.',
+                    bio2: 'Criador da Mastersaf, adquirida pela Thomson Reuters em 2011. Investidor ativo em mais de 30 empresas.'
+                },
+                contact: {
+                    label: '// Iniciar Conexão',
+                    title: 'Construa Conosco',
+                    description: 'Entre em contato para construir o futuro digital juntos',
+                    info: { title: 'Canais de Conexão', email: 'Email', phone: 'Telefone', location: 'Localização' },
+                    form: { name: 'Nome', company: 'Empresa', email: 'Email', message: 'Mensagem', submit: 'Transmitir Mensagem' }
+                },
+                footer: { copyright: '© 2025 Martinus Capital • Construindo o Futuro Digital' }
+            },
+            en: {
+                nav: { about: 'Essence', portfolio: 'Portfolio', team: 'Leadership', contact: 'Contact' },
+                hero: {
+                    title1: 'Building',
+                    title2: 'the Digital Future',
+                    subtitle: 'Investing in innovation, technology and entrepreneurship',
+                    cta1: 'Explore Ecosystem',
+                    cta2: 'Start Connection'
+                },
+                stats: { companies: 'Companies', years: 'Years', focus: 'Digital Focus' },
+                about: {
+                    label: '// Core Pillars',
+                    title: 'Value Architecture',
+                    description: 'We structure investments through three fundamental technological pillars',
+                    pillar1: { title: 'Strategic Vision', text: 'Strategic committees with direct influence on innovation, technology and market strategy' },
+                    pillar2: { title: 'High Performance Execution', text: 'Commitment to results through governance, ethics and sustainable value generation' },
+                    pillar3: { title: 'Continuous Scalability', text: 'Long-term partnerships building companies prepared to last through innovation' }
+                },
+                portfolio: {
+                    label: '// Digital Ecosystem',
+                    title: 'Technology Portfolio',
+                    description: '35+ companies transforming markets through cutting-edge technology',
+                    all: 'All', fintech: 'Fintech', saas: 'SaaS', ecommerce: 'E-commerce', tech: 'Tech'
+                },
+                team: {
+                    label: '// Future Architect',
+                    title: 'Visionary Leadership',
+                    description: '35 years building the future of Brazilian technology',
+                    role: 'Founder & Digital Architect',
+                    bio1: 'Founder of Nexaas with over 35 years building the digital infrastructure of the future.',
+                    bio2: 'Creator of Mastersaf, acquired by Thomson Reuters in 2011. Active investor in over 30 companies.'
+                },
+                contact: {
+                    label: '// Start Connection',
+                    title: 'Build With Us',
+                    description: 'Get in touch to build the digital future together',
+                    info: { title: 'Connection Channels', email: 'Email', phone: 'Phone', location: 'Location' },
+                    form: { name: 'Name', company: 'Company', email: 'Email', message: 'Message', submit: 'Transmit Message' }
+                },
+                footer: { copyright: '© 2025 Martinus Capital • Building the Digital Future' }
+            },
+            es: {
+                nav: { about: 'Esencia', portfolio: 'Portfolio', team: 'Liderazgo', contact: 'Contacto' },
+                hero: {
+                    title1: 'Construyendo',
+                    title2: 'el Futuro Digital',
+                    subtitle: 'Invirtiendo en innovación, tecnología y emprendimiento',
+                    cta1: 'Explorar Ecosistema',
+                    cta2: 'Iniciar Conexión'
+                },
+                stats: { companies: 'Empresas', years: 'Años', focus: 'Foco Digital' },
+                about: {
+                    label: '// Pilares Fundamentales',
+                    title: 'Arquitectura de Valor',
+                    description: 'Estructuramos inversiones a través de tres pilares tecnológicos fundamentales',
+                    pillar1: { title: 'Visión Estratégica', text: 'Comités estratégicos con influencia directa en innovación, tecnología y estrategia de mercado' },
+                    pillar2: { title: 'Ejecución de Alto Rendimiento', text: 'Compromiso con resultados a través de gobernanza, ética y generación de valor sostenible' },
+                    pillar3: { title: 'Escalabilidad Continua', text: 'Alianzas a largo plazo construyendo empresas preparadas para perdurar a través de la innovación' }
+                },
+                portfolio: {
+                    label: '// Ecosistema Digital',
+                    title: 'Portfolio Tecnológico',
+                    description: '35+ empresas transformando mercados a través de tecnología de punta',
+                    all: 'Todas', fintech: 'Fintech', saas: 'SaaS', ecommerce: 'E-commerce', tech: 'Tech'
+                },
+                team: {
+                    label: '// Arquitecto del Futuro',
+                    title: 'Liderazgo Visionario',
+                    description: '35 años construyendo el futuro de la tecnología brasileña',
+                    role: 'Fundador & Arquitecto Digital',
+                    bio1: 'Fundador de Nexaas con más de 35 años construyendo la infraestructura digital del futuro.',
+                    bio2: 'Creador de Mastersaf, adquirida por Thomson Reuters en 2011. Inversor activo en más de 30 empresas.'
+                },
+                contact: {
+                    label: '// Iniciar Conexión',
+                    title: 'Construye Con Nosotros',
+                    description: 'Ponte en contacto para construir el futuro digital juntos',
+                    info: { title: 'Canales de Conexión', email: 'Email', phone: 'Teléfono', location: 'Ubicación' },
+                    form: { name: 'Nombre', company: 'Empresa', email: 'Email', message: 'Mensaje', submit: 'Transmitir Mensaje' }
+                },
+                footer: { copyright: '© 2025 Martinus Capital • Construyendo el Futuro Digital' }
+            }
+        };
+
+        // Portfolio data
+        const portfolioData = [
+            { name: 'Fintera', category: 'fintech', description: 'Plataforma de gestão financeira', url: 'fintera.com.br', logo: 'images/logos/logo-fintera.png' },
+            { name: '2Sale', category: 'saas', description: 'Gestão e vendas B2B', url: '2sale.com.br', logo: 'images/logos/2sale-logo.png' },
+            { name: 'ZeeDog', category: 'ecommerce', description: 'E-commerce premium pets', url: 'zeedog.com.br', logo: 'images/logos/logo-zeedog.svg' },
+            { name: 'Nexaas', category: 'saas', description: 'Varejo omnichannel', url: 'nexaas.com', logo: 'images/logos/logo-nexaas.png' },
+            { name: 'ContabilOne', category: 'fintech', description: 'Inteligência tributária', url: 'contabilone.com', logo: 'images/logos/logo-contabilone.svg' },
+            { name: 'Ploomes', category: 'saas', description: 'CRM e automação', url: 'ploomes.com', logo: 'images/logos/logo-ploomes.png' },
+            { name: 'LinkAPI', category: 'tech', description: 'APIs e integrações', url: 'linkapisolutions.com', logo: 'images/logos/logo-linkapi.svg' },
+            { name: 'Engelink', category: 'saas', description: 'Tech para construção', url: 'engelink.com.br', logo: 'images/logos/logo-engelink.svg' },
+            { name: 'Collection', category: 'ecommerce', description: 'Marketplace arquitetura', url: 'collection.com.br', logo: 'images/logos/COLLECTION_NOME-PRETO.png' },
+            { name: 'Increazy', category: 'ecommerce', description: 'Checkout inteligente', url: 'increazy.com', logo: 'images/logos/logo-increazy.svg' },
+            { name: 'Builtcode', category: 'tech', description: 'Fábrica de software', url: 'builtcode.com.br', logo: 'images/logos/logo-builtcode.png' },
+            { name: 'Gett', category: 'saas', description: 'Gestão de importação', url: 'gett.com.br', logo: 'images/logos/logo-gett.png' }
+        ];
+
+        // Render portfolio
+        function renderPortfolio(filter = 'all') {
+            const grid = document.getElementById('portfolioGrid');
+            grid.innerHTML = '';
+            
+            portfolioData.forEach(item => {
+                if (filter === 'all' || item.category === filter) {
+                    const card = document.createElement('div');
+                    card.className = 'company-card show';
+                    card.innerHTML = `
+                        <div class="company-tag">${item.category}</div>
+                        <div class="company-logo">
+                            <img src="${item.logo}" alt="${item.name}">
+                        </div>
+                        <h3 class="company-name">${item.name}</h3>
+                        <p class="company-description">${item.description}</p>
+                        <a href="https://${item.url}" target="_blank" class="company-link">
+                            Acessar →
+                        </a>
+                    `;
+                    grid.appendChild(card);
+                }
+            });
+        }
+
+        // Filter
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                renderPortfolio(this.dataset.filter);
+            });
+        });
+
+        // Language
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const keys = key.split('.');
+                let value = translations[lang];
+                keys.forEach(k => value = value[k]);
+                el.textContent = value;
+            });
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.lang === lang) btn.classList.add('active');
+            });
+        }
+
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                changeLanguage(this.dataset.lang);
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Initialize
+        renderPortfolio();
+    </script>
+</body>
+</html>
