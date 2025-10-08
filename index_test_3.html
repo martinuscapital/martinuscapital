@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Martinus Capital - Investimentos em Inovação, Tecnologia e Empreendimento | Venture Capital</title>
+    <meta name="title" content="Martinus Capital - Investimentos em Inovação, Tecnologia e Empreendimento">
+    <meta name="description" content="Martinus Capital é uma empresa de venture capital com foco em software B2B e B2C. Capital + Tempo + Experiência para empresas que buscam crescimento acelerado. Investidor em Nexaas, Zeedog, Ploomes, LinkAPI, Omnitax e mais de 35 empresas de tecnologia.">
+    <meta name="keywords" content="martinus capital, venture capital brasil, investimento tecnologia, software B2B, B2C, jander sousa martins, nexaas, investimento inovação, startup, fintech, saas, ecommerce">
+    <meta name="author" content="Martinus Capital">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="Portuguese, English, Spanish">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://martinuscapital.com.br/">
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="pt-BR" href="https://martinuscapital.com.br/">
+    <link rel="alternate" hreflang="en" href="https://martinuscapital.com.br/en">
+    <link rel="alternate" hreflang="es" href="https://martinuscapital.com.br/es">
+    <link rel="alternate" hreflang="x-default" href="https://martinuscapital.com.br/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martinuscapital.com.br/">
+    <meta property="og:title" content="Martinus Capital - Investimentos em Inovação, Tecnologia e Empreendimento">
+    <meta property="og:description" content="Capital + Tempo + Experiência para empresas B2B e B2C. Investidor em mais de 35 empresas de tecnologia como Nexaas, Zeedog, Ploomes e Omnitax.">
+    <meta property="og:image" content="https://martinuscapital.com.br/images/martinus-capital-thumb.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Martinus Capital">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://martinuscapital.com.br/">
+    <meta name="twitter:title" content="Martinus Capital - Investimentos em Inovação e Tecnologia">
+    <meta name="twitter:description" content="Venture capital focada em software B2B e B2C. Investidor em mais de 35 empresas de tecnologia.">
+    <meta name="twitter:image" content="https://martinuscapital.com.br/images/martinus-capital-thumb.jpg">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="São Paulo">
+    <meta name="geo.position" content="-23.5505;-46.6333">
+    <meta name="ICBM" content="-23.5505, -46.6333">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy-blue: #1a2b3c;
+    --navy-blue-light: #243447;
+    --cyan-bright: #00b4d8;
+    --cyan-accent: #0dcaf0;
+    --dark-gray: #2c3e50;
+    --off-white: #ffffff;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background: var(--navy-blue);
+}
+
+nav.scrolled {
+    background: var(--navy-blue);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 186px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    color: var(--off-white);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--cyan-bright);
+}
+
+.language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    padding: 5px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--off-white);
+    cursor: pointer;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.lang-btn.active {
+    background: var(--cyan-bright);
+    color: var(--off-white);
+    border-color: var(--cyan-bright);
+}
+
+.lang-btn:hover {
+    background: var(--cyan-accent);
+    border-color: var(--cyan-accent);
+    color: var(--off-white);
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.mobile-menu span {
+    width: 25px;
+    height: 3px;
+    background: var(--off-white);
+    transition: all 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--navy-blue) 0%, var(--navy-blue-light) 50%, var(--cyan-bright) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--off-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 180, 216, 0.2) 0%, transparent 70%);
+    animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 22px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    opacity: 0.95;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 60px auto;
+    max-width: 1000px;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 180, 216, 0.2);
+    border-color: var(--cyan-bright);
+}
+
+.stat-number {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 18px 45px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--cyan-bright);
+    color: var(--off-white);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--cyan-accent);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.4);
+}
+
+/* Section Styles */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--navy-blue);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark-gray);
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Section */
+.about {
+    background: var(--off-white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.about-card {
+    background: var(--off-white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(26, 43, 60, 0.1);
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 180, 216, 0.2);
+    border-color: var(--cyan-bright);
+}
+
+.about-card h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy-blue);
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+/* Portfolio Section */
+.portfolio {
+    background: var(--light-bg);
+}
+
+/* Carousel Simples */
+.carousel-wrapper {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    align-items: center;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.logo-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 10px;
+}
+
+.logo-item:hover {
+    background: rgba(0, 180, 216, 0.05);
+}
+
+.logo-item:active {
+    transform: scale(0.95);
+}
+
+.logo-item[data-clicked="true"]::before {
+    content: '👆';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    animation: pulse-emoji 1s ease-in-out infinite;
+}
+
+@keyframes pulse-emoji {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.logo-item img {
+    max-width: 180px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #666;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background: var(--cyan-bright);
+    color: var(--off-white);
+}
+
+.carousel-arrow.prev {
+    left: -50px;
+}
+
+.carousel-arrow.next {
+    right: -50px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d1d5db;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: var(--cyan-bright);
+}
+
+.dot:hover {
+    background: var(--cyan-accent);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 30px;
+    border: 2px solid var(--navy-blue);
+    background: var(--off-white);
+    color: var(--navy-blue);
+    border-radius: 30px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--cyan-bright);
+    color: var(--off-white);
+    border-color: var(--cyan-bright);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    background: var(--off-white);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(26, 43, 60, 0.1);
+    transition: all 0.3s;
+    display: none;
+    border: 2px solid transparent;
+}
+
+.portfolio-item.show {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 180, 216, 0.2);
+    border-color: var(--cyan-bright);
+}
+
+.portfolio-logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-logo img {
+    max-width: 200px;
+    max-height: 80px;
+}
+
+.portfolio-item h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--navy-blue);
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--dark-gray);
+}
+
+.portfolio-item .category-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgba(0, 180, 216, 0.1);
+    color: var(--cyan-bright);
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.portfolio-link {
+    color: var(--cyan-bright);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.portfolio-link:hover {
+    color: var(--cyan-accent);
+    text-decoration: underline;
+}
+
+/* Team Section */
+.team {
+    background: var(--off-white);
+}
+
+/* CSC Section */
+.csc {
+    background: var(--off-white);
+}
+
+.csc-hero {
+    text-align: center;
+    padding: 40px 0 60px;
+}
+
+.csc-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(0, 180, 216, 0.1);
+    color: var(--cyan-bright);
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.csc-cta-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--cyan-bright);
+    border: 2px solid var(--cyan-bright);
+}
+
+.btn-secondary:hover {
+    background: var(--cyan-bright);
+    color: var(--off-white);
+}
+
+.csc-overview {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: var(--light-bg);
+    border-radius: 15px;
+    border-left: 4px solid var(--cyan-bright);
+}
+
+.csc-overview p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+.csc-section-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--navy-blue);
+}
+
+/* Pilares */
+.csc-pillars {
+    margin-bottom: 80px;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.pillar-card {
+    background: var(--off-white);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(26, 43, 60, 0.1);
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 180, 216, 0.2);
+    border-color: var(--cyan-bright);
+}
+
+.pillar-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pillar-card h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy-blue);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pillar-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pillar-card ul li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+.pillar-card ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--cyan-bright);
+    font-weight: 700;
+}
+
+/* Processo */
+.csc-process {
+    margin-bottom: 80px;
+    background: var(--light-bg);
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+.process-timeline {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    position: relative;
+}
+
+.process-step:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -20px;
+    top: 30px;
+    font-size: 24px;
+    color: var(--cyan-bright);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--cyan-bright);
+    color: var(--off-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+    box-shadow: 0 5px 20px rgba(0, 180, 216, 0.3);
+}
+
+.process-step h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy-blue);
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    font-size: 14px;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Benefícios */
+.csc-benefits-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.benefits-column h3 {
+    margin-bottom: 30px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--dark-gray);
+    border-bottom: 1px solid var(--light-bg);
+}
+
+/* Métricas */
+.csc-metrics {
+    margin-bottom: 80px;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.metric-card {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan-bright);
+    background: var(--off-white);
+    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.15);
+}
+
+.metric-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.metric-label {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cyan-bright);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.metric-value {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--navy-blue);
+    margin-bottom: 10px;
+}
+
+.metric-desc {
+    font-size: 14px;
+    color: var(--dark-gray);
+    line-height: 1.4;
+}
+
+/* FAQ */
+.csc-faq {
+    margin-bottom: 80px;
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--off-white);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(26, 43, 60, 0.08);
+    transition: all 0.3s;
+    border-left: 4px solid var(--light-bg);
+}
+
+.faq-item:hover {
+    border-left-color: var(--cyan-bright);
+    box-shadow: 0 5px 25px rgba(0, 180, 216, 0.15);
+}
+
+.faq-question {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy-blue);
+    margin-bottom: 15px;
+}
+
+.faq-answer {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+/* CTA Final */
+.csc-final-cta {
+    text-align: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, var(--navy-blue) 0%, var(--cyan-bright) 100%);
+    border-radius: 20px;
+    color: var(--off-white);
+}
+
+.csc-final-cta h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.csc-final-cta p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.csc-final-cta .btn-primary {
+    background: var(--off-white);
+    color: var(--cyan-bright);
+}
+
+.csc-final-cta .btn-primary:hover {
+    background: var(--light-bg);
+    transform: scale(1.05);
+}
+
+.team-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: center;
+    background: var(--off-white);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(26, 43, 60, 0.15);
+    border: 2px solid var(--light-bg);
+}
+
+.team-photo {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--navy-blue);
+    margin-bottom: 10px;
+}
+
+.team-info h4 {
+    font-size: 22px;
+    color: var(--cyan-bright);
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.team-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--dark-gray);
+}
+
+.team-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.team-tag {
+    padding: 8px 20px;
+    background: var(--light-bg);
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: var(--dark-gray);
+    border: 1px solid var(--cyan-bright);
+}
+
+/* Contact Section */
+.contact {
+    background: var(--light-bg);
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--off-white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(26, 43, 60, 0.15);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--navy-blue);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 15px;
+    border: 2px solid var(--light-bg);
+    border-radius: 8px;
+    font-family: "Lora", serif;
+    font-size: 16px;
+    transition: border 0.3s;
+    background: var(--off-white);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--cyan-bright);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    width: 100%;
+    background: var(--cyan-bright);
+    color: var(--off-white);
+    border: none;
+    padding: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background: var(--cyan-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.3);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid var(--light-bg);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--dark-gray);
+}
+
+/* Footer */
+footer {
+    background: var(--navy-blue);
+    color: var(--off-white);
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 186px;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--navy-blue);
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Carousel Mobile */
+    .carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .carousel-arrow.prev {
+        left: 0;
+    }
+
+    .carousel-arrow.next {
+        right: 0;
+    }
+
+    .carousel-wrapper {
+        padding: 0 45px;
+    }
+
+    .carousel-slide {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .logo-item {
+        flex: 0 0 40%;
+        max-width: 150px;
+    }
+
+    .logo-item img {
+        max-width: 100%;
+        max-height: 70px;
+    }
+
+    .team-card {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    /* CSC Mobile */
+    .csc-overview {
+        padding: 30px 20px;
+    }
+
+    .csc-section-title {
+        font-size: 28px;
+    }
+
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-timeline {
+        flex-direction: column;
+    }
+
+    .process-step:not(:last-child)::after {
+        content: "↓";
+        right: auto;
+        top: auto;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .csc-benefits-section {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .csc-final-cta {
+        padding: 40px 20px;
+    }
+
+    .csc-final-cta h3 {
+        font-size: 24px;
+    }
+
+    .csc-final-cta p {
+        font-size: 18px;
+    }
+}
+
+    </style>
+
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Martinus Capital",
+        "legalName": "Martinus Capital",
+        "url": "https://martinuscapital.com.br",
+        "logo": "https://martinuscapital.com.br/images/logos/logo-martinus-capital.svg",
+        "description": "Empresa de venture capital com foco em investimentos em software B2B e B2C, que soma capital, tempo e experiência aos empreendedores.",
+        "foundingDate": "2011",
+        "founders": [
+            {
+                "@type": "Person",
+                "name": "Jander Sousa Martins",
+                "jobTitle": "Fundador e Empreendedor",
+                "image": "https://martinuscapital.com.br/images/jander.png",
+                "description": "Fundador da Nexaas com mais de 35 anos na indústria de software e tecnologia."
+            }
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. do Rócio, 199 - Décimo andar",
+            "addressLocality": "Vila Olímpia",
+            "addressRegion": "SP",
+            "postalCode": "04552-000",
+            "addressCountry": "BR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-21-97905-0000",
+            "contactType": "Customer Service",
+            "email": "investidas@martinuscapital.com.br",
+            "areaServed": "BR",
+            "availableLanguage": ["Portuguese", "English", "Spanish"]
+        },
+        "sameAs": [
+            "https://martinuscapital.com.br"
+        ],
+        "knowsAbout": ["Venture Capital", "Software B2B", "Software B2C", "Fintech", "SaaS", "E-commerce", "Tecnologia", "Inovação", "Investimentos"],
+        "areaServed": {
+            "@type": "Country",
+            "name": "Brazil"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Martinus Capital",
+        "url": "https://martinuscapital.com.br",
+        "description": "Investimentos em inovação, tecnologia e empreendimento",
+        "inLanguage": ["pt-BR", "en", "es"],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Martinus Capital"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "InvestmentFund",
+        "name": "Martinus Capital",
+        "description": "Capital + Tempo + Experiência para empresas B2B e B2C que buscam crescimento acelerado e inovação contínua",
+        "url": "https://martinuscapital.com.br",
+        "areaServed": "BR",
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "value": "35+",
+            "description": "Empresas no portfólio"
+        }
+    }
+    </script>
+</head>
+<body itemscope itemtype="https://schema.org/Organization">
+    <!-- Navigation -->
+    <nav id="navbar" role="navigation" aria-label="Menu principal">
+        <div class="container">
+            <div class="nav-container">
+                <img src="images/logos/logo-martinus-capital.svg" alt="Martinus Capital - Investimentos em Inovação, Tecnologia e Empreendimento" class="logo" width="186" height="auto" itemprop="logo">
+                <div class="nav-links" id="navLinks">
+                    <a href="#about" data-i18n="nav.about" aria-label="Seção sobre a empresa">A Empresa</a>
+                    <a href="#csc" aria-label="Seção sobre a empresa">CSC</a>
+                    <a href="#portfolio" data-i18n="nav.portfolio" aria-label="Portfolio de investimentos">Portfolio</a>
+                    <a href="#team" data-i18n="nav.team" aria-label="Equipe e fundadores">Quem Somos</a>
+                    <a href="#contact" data-i18n="nav.contact" aria-label="Entre em contato">Contato</a>
+                    <div class="language-selector" role="group" aria-label="Seletor de idioma">
+                        <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+                        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                        <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+                    </div>
+                </div>
+                <div class="mobile-menu" id="mobileMenu" aria-label="Abrir menu mobile" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="hero" role="banner">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero.badge">Investimentos em Inovação & Tecnologia</div>
+                <h1 data-i18n="hero.title" itemprop="slogan">Construímos o futuro digital</h1>
+                <p data-i18n="hero.subtitle" itemprop="description">Capital + Tempo + Experiência para empresas B2B e B2C que buscam crescimento acelerado e inovação contínua</p>
+                
+                <div class="stats-grid" role="group" aria-label="Estatísticas da empresa">
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label" data-i18n="hero.stat1">Empresas Investidas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label" data-i18n="hero.stat2">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label" data-i18n="hero.stat4">Foco em Resultados</span>
+                    </div>
+                </div>
+
+                <a href="#portfolio" class="btn btn-primary" data-i18n="hero.cta" aria-label="Ver portfolio de empresas investidas">Conheça Nossas Empresas</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title" data-i18n="about.title">Nossa Essência</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">Muito além do capital financeiro: tempo, experiência e cultura empreendedora</p>
+                
+                <div class="about-grid">
+                    <article class="about-card">
+                        <h3 data-i18n="about.card1.title">Visão Estratégica</h3>
+                        <p data-i18n="about.card1.text">Comitês estratégicos ativos com influência em inovação, tecnologia e estratégia de mercado</p>
+                    </article>
+                    <article class="about-card">
+                        <h3 data-i18n="about.card2.title">Cultura de Resultados</h3>
+                        <p data-i18n="about.card2.text">Ética, responsabilidade e comprometimento com geração de valor para todos os stakeholders</p>
+                    </article>
+                    <article class="about-card">
+                        <h3 data-i18n="about.card3.title">Crescimento Sustentável</h3>
+                        <p data-i18n="about.card3.text">Parcerias de longo prazo construindo empresas feitas para durar através da inovação contínua</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CSC Section -->
+        <section id="csc" class="csc" aria-labelledby="csc-title">
+            <div class="container">
+                <!-- Hero CSC -->
+                <div class="csc-hero">
+                    <span class="csc-badge">Centro Administrativo Compartilhado</span>
+                    <h2 id="csc-title" class="section-title">Marinus Capital CSC</h2>
+                    <p class="section-subtitle">Governança, eficiência e tecnologia para acelerar o crescimento do nosso portfólio</p>
+                    <div class="csc-cta-group">
+                        <a href="#contact" class="btn btn-primary">Fale com o Time</a>
+                        <a href="#csc-services" class="btn btn-secondary">Conheça Nossos Serviços</a>
+                    </div>
+                </div>
+
+                <!-- Visão Geral -->
+                <div class="csc-overview">
+                    <p>Na Marinus Capital, oferecemos às empresas do nosso ecossistema um <strong>Centro Administrativo Compartilhado (CSC)</strong> que integra jurídico, contábil, financeiro/administrativo e dados/automação. Nosso objetivo é padronizar rotinas críticas, reduzir custos e elevar a qualidade operacional com suporte especializado e tecnologia de ponta.</p>
+                </div>
+
+                <!-- Pilares de Serviço -->
+                <div id="csc-services" class="csc-pillars">
+                    <h3 class="csc-section-title">Nossos Pilares de Serviço</h3>
+                    
+                    <div class="pillars-grid">
+                        <!-- Jurídico -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon">⚖️</div>
+                            <h4>Apoio Jurídico</h4>
+                            <ul>
+                                <li>Elaboração e revisão de contratos (comerciais, societários, NDAs, termos)</li>
+                                <li>Adequação regulatória e governança</li>
+                                <li>Gestão de cap-table e documentos societários</li>
+                                <li>Pareceres e due diligence para operações</li>
+                            </ul>
+                        </div>
+
+                        <!-- Contábil -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon">📊</div>
+                            <h4>Apoio Contábil</h4>
+                            <ul>
+                                <li>Contabilidade inteligente orientada a negócios</li>
+                                <li>Análise tributária e planejamento fiscal</li>
+                                <li>Conciliações e fechamento contábil mensais</li>
+                                <li>Relatórios gerenciais (DRE, BP, Fluxo de Caixa)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Financeiro -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon">💰</div>
+                            <h4>Financeiro e Administrativo</h4>
+                            <ul>
+                                <li>Contas a pagar/receber e tesouraria</li>
+                                <li>Faturamento e cobrança automatizados</li>
+                                <li>Orçamento, forecast e controle OPEX/CAPEX</li>
+                                <li>Políticas e compliance administrativo</li>
+                            </ul>
+                        </div>
+
+                        <!-- Dados e RI -->
+                        <div class="pillar-card">
+                            <div class="pillar-icon">📈</div>
+                            <h4>Dados, RI e Automações</h4>
+                            <ul>
+                                <li>BI personalizado para tomada de decisão</li>
+                                <li>Automação de processos (integrações ERP/CRM)</li>
+                                <li>Governança de dados e qualidade</li>
+                                <li>Suporte a RI e relatórios para investidores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Como Funcionamos -->
+                <div class="csc-process">
+                    <h3 class="csc-section-title">Como Funcionamos</h3>
+                    
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h5>Diagnóstico Rápido</h5>
+                            <p>Mapeamos processos, sistemas e necessidades por área</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h5>Onboarding e Padronização</h5>
+                            <p>Definimos SLAs, políticas e rotinas com owners claros</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h5>Execução Assistida</h5>
+                            <p>Operação diária + apoio consultivo sênior</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h5>Dashboards e Rituais</h5>
+                            <p>Painéis gerenciais e reuniões mensais</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">5</div>
+                            <h5>Melhoria Contínua</h5>
+                            <p>Automações e ajustes baseados em métricas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefícios e Diferenciais -->
+                <div class="csc-benefits-section">
+                    <div class="benefits-column">
+                        <h3 class="csc-section-title">Benefícios para o Portfólio</h3>
+                        <ul class="benefits-list">
+                            <li>✓ Eficiência operacional com redução de custos</li>
+                            <li>✓ Confiabilidade de dados para decisões</li>
+                            <li>✓ Conformidade e mitigação de riscos</li>
+                            <li>✓ Time fundador focado em produto e vendas</li>
+                            <li>✓ Escalabilidade desde o early stage</li>
+                        </ul>
+                    </div>
+
+                    <div class="benefits-column">
+                        <h3 class="csc-section-title">Diferenciais Marinus</h3>
+                        <ul class="benefits-list">
+                            <li>⭐ Time multidisciplinar com playbooks testados</li>
+                            <li>⭐ Stack tecnológica integrada</li>
+                            <li>⭐ Relatórios alinhados a RI e conselho</li>
+                            <li>⭐ SLAs claros e métricas de qualidade</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="csc-faq">
+                    <h3 class="csc-section-title">Perguntas Frequentes</h3>
+                    
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h5 class="faq-question">O CSC substitui meu financeiro interno?</h5>
+                            <p class="faq-answer">Pode complementar ou assumir integralmente, conforme o estágio e a necessidade da empresa.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h5 class="faq-question">Usamos sistemas diferentes. É um problema?</h5>
+                            <p class="faq-answer">Não. Integramos com os principais ERPs/CRMs e, quando necessário, criamos conectores/rotinas de RPA.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h5 class="faq-question">Há apoio em captação e RI?</h5>
+                            <p class="faq-answer">Sim. Estruturamos indicadores, materiais recorrentes e respondemos a diligências com dados confiáveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Final -->
+                <div class="csc-final-cta">
+                    <h3>Quer levar eficiência e previsibilidade para a operação da sua empresa?</h3>
+                    <p>Entre em contato com o CSC Marinus Capital</p>
+                    <a href="#contact" class="btn btn-primary">Fale Conosco</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title" data-i18n="portfolio.title">Portfolio de Investimentos</h2>
+                
+                <div class="carousel-wrapper">
+                    <button class="carousel-arrow prev" onclick="moveSlide(-1)">‹</button>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack"></div>
+                    </div>
+                    <button class="carousel-arrow next" onclick="moveSlide(1)">›</button>
+                </div>
+                
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>>
+
+        <!-- Team Section -->
+        <section id="team" class="team" aria-labelledby="team-title">
+            <div class="container">
+                <h2 id="team-title" class="section-title" data-i18n="team.title">Quem Somos</h2>
+                
+                <article class="team-card" itemscope itemtype="https://schema.org/Person">
+                    <div class="team-photo">
+                        <img src="images/jander.png" alt="Jander Sousa Martins - Fundador e Empreendedor da Martinus Capital, Nexaas e Mastersaf" width="400" height="400" itemprop="image">
+                    </div>
+                    <div class="team-info">
+                        <h3 itemprop="name">Jander Sousa Martins</h3>
+                        <h4 data-i18n="team.role" itemprop="jobTitle">Fundador e Empreendedor</h4>
+                        <p data-i18n="team.bio1" itemprop="description">Fundador da Nexaas com mais de 35 anos na indústria de software e tecnologia.</p>
+                        <p data-i18n="team.bio2">Construiu a Mastersaf, adquirida pela Thomson Reuters em 2011, e é investidor em mais de 30 empresas de tecnologia.</p>
+                        <p data-i18n="team.bio3">Atuou junto ao SERPRO na implementação do Imposto de Renda informatizado e trabalhou com a FGV para o lançamento nacional da IN68/IN65.</p>
+                        <div class="team-tags">
+                            <span class="team-tag">Nexaas</span>
+                            <span class="team-tag">Zeedog</span>
+                            <span class="team-tag">Ploomes</span>
+                            <span class="team-tag">LinkAPI</span>
+                            <span class="team-tag">Omnitax</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title" data-i18n="contact.title">Vamos Conversar?</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Entre em contato para discutir como podemos acelerar o crescimento do seu negócio</p>
+                
+                <div class="contact-form">
+                    <form aria-label="Formulário de contato">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label data-i18n="contact.form.name" for="name">Nome</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="contact.form.company" for="company">Empresa</label>
+                                <input type="text" id="company" name="company" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="contact.form.email" for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="contact.form.phone" for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" required aria-required="true">
+                            </div>
+                            <div class="form-group full">
+                                <label data-i18n="contact.form.message" for="message">Mensagem</label>
+                                <textarea id="message" name="message" required aria-required="true"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit" data-i18n="contact.form.submit" aria-label="Enviar formulário de contato">Enviar Mensagem</button>
+                    </form>
+                    
+                    <div class="contact-info" itemscope itemtype="https://schema.org/ContactPoint">
+                        <div class="contact-info-item">
+                            <span aria-hidden="true">✉</span>
+                            <span itemprop="email">investidas@martinuscapital.com.br</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <span aria-hidden="true">📞</span>
+                            <span itemprop="telephone">+55 (21) 97905-0000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img src="images/logos/logo-martinus-capital.svg" alt="Martinus Capital - Investimentos em Inovação, Tecnologia e Empreendimento" class="footer-logo" width="186" height="auto">
+                <div data-i18n="footer.copyright">© 2025 Martinus Capital. Todos os direitos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+// Translations
+const translations = {
+    pt: {
+        nav: {
+            about: 'A Empresa',
+            portfolio: 'Portfolio',
+            team: 'Quem Somos',
+            contact: 'Contato'
+        },
+        hero: {
+            badge: 'Investimentos em Inovação & Tecnologia',
+            title: 'Construímos o futuro digital',
+            subtitle: 'Capital + Tempo + Experiência para empresas B2B e B2C que buscam crescimento acelerado e inovação contínua',
+            stat1: 'Empresas Investidas',
+            stat2: 'Anos de Experiência',
+            stat3: 'Valor Gerado',
+            stat4: 'Foco em Resultados',
+            cta: 'Conheça Nossas Empresas'
+        },
+        about: {
+            title: 'Nossa Essência',
+            subtitle: 'Muito além do capital financeiro: tempo, experiência e cultura empreendedora',
+            card1: {
+                title: 'Visão Estratégica',
+                text: 'Comitês estratégicos ativos com influência em inovação, tecnologia e estratégia de mercado'
+            },
+            card2: {
+                title: 'Cultura de Resultados',
+                text: 'Ética, responsabilidade e comprometimento com geração de valor para todos os stakeholders'
+            },
+            card3: {
+                title: 'Crescimento Sustentável',
+                text: 'Parcerias de longo prazo construindo empresas feitas para durar através da inovação contínua'
+            }
+        },
+        portfolio: {
+            title: 'Portfolio de Investimentos',
+            subtitle: 'Empresas inovadoras transformando seus mercados',
+            filter: {
+                all: 'Todas',
+                fintech: 'Fintech',
+                saas: 'SaaS',
+                ecommerce: 'E-commerce',
+                tech: 'Tecnologia'
+            }
+        },
+        team: {
+            title: 'Quem Somos',
+            role: 'Fundador e Empreendedor',
+            bio1: 'Fundador da Nexaas com mais de 35 anos na indústria de software e tecnologia.',
+            bio2: 'Construiu a Mastersaf, adquirida pela Thomson Reuters em 2011, e é investidor em mais de 30 empresas de tecnologia.',
+            bio3: 'Atuou junto ao SERPRO na implementação do Imposto de Renda informatizado e trabalhou com a FGV para o lançamento nacional da IN68/IN65.'
+        },
+        contact: {
+            title: 'Vamos Conversar?',
+            subtitle: 'Entre em contato para discutir como podemos acelerar o crescimento do seu negócio',
+            form: {
+                name: 'Nome',
+                company: 'Empresa',
+                email: 'E-mail',
+                phone: 'Telefone',
+                message: 'Mensagem',
+                submit: 'Enviar Mensagem'
+            }
+        },
+        footer: {
+            copyright: '© 2025 Martinus Capital. Todos os direitos reservados.'
+        }
+    },
+    en: {
+        nav: {
+            about: 'About',
+            portfolio: 'Portfolio',
+            team: 'Who We Are',
+            contact: 'Contact'
+        },
+        hero: {
+            badge: 'Investments in Innovation & Technology',
+            title: 'We build the digital future',
+            subtitle: 'Capital + Time + Experience for B2B and B2C companies seeking accelerated growth and continuous innovation',
+            stat1: 'Invested Companies',
+            stat2: 'Years of Experience',
+            stat3: 'Value Generated',
+            stat4: 'Results Focus',
+            cta: 'Explore Our Companies'
+        },
+        about: {
+            title: 'Our Essence',
+            subtitle: 'Much more than financial capital: time, experience and entrepreneurial culture',
+            card1: {
+                title: 'Strategic Vision',
+                text: 'Active strategic committees with influence in innovation, technology and market strategy'
+            },
+            card2: {
+                title: 'Results Culture',
+                text: 'Ethics, responsibility and commitment to value generation for all stakeholders'
+            },
+            card3: {
+                title: 'Sustainable Growth',
+                text: 'Long-term partnerships building companies built to last through continuous innovation'
+            }
+        },
+        portfolio: {
+            title: 'Investment Portfolio',
+            subtitle: 'Innovative companies transforming their markets',
+            filter: {
+                all: 'All',
+                fintech: 'Fintech',
+                saas: 'SaaS',
+                ecommerce: 'E-commerce',
+                tech: 'Technology'
+            }
+        },
+        team: {
+            title: 'Who We Are',
+            role: 'Founder and Entrepreneur',
+            bio1: 'Founder of Nexaas with over 35 years in the software and technology industry.',
+            bio2: 'Built Mastersaf, acquired by Thomson Reuters in 2011, and is an investor in over 30 technology companies.',
+            bio3: 'Worked with SERPRO on the implementation of computerized Income Tax and with FGV for the national launch of IN68/IN65.'
+        },
+        contact: {
+            title: "Let's Talk?",
+            subtitle: 'Get in touch to discuss how we can accelerate your business growth',
+            form: {
+                name: 'Name',
+                company: 'Company',
+                email: 'E-mail',
+                phone: 'Phone',
+                message: 'Message',
+                submit: 'Send Message'
+            }
+        },
+        footer: {
+            copyright: '© 2025 Martinus Capital. All rights reserved.'
+        }
+    },
+    es: {
+        nav: {
+            about: 'La Empresa',
+            portfolio: 'Portfolio',
+            team: 'Quiénes Somos',
+            contact: 'Contacto'
+        },
+        hero: {
+            badge: 'Inversiones en Innovación y Tecnología',
+            title: 'Construimos el futuro digital',
+            subtitle: 'Capital + Tiempo + Experiencia para empresas B2B y B2C que buscan crecimiento acelerado e innovación continua',
+            stat1: 'Empresas Invertidas',
+            stat2: 'Años de Experiencia',
+            stat3: 'Valor Generado',
+            stat4: 'Enfoque en Resultados',
+            cta: 'Conozca Nuestras Empresas'
+        },
+        about: {
+            title: 'Nuestra Esencia',
+            subtitle: 'Mucho más que capital financiero: tiempo, experiencia y cultura emprendedora',
+            card1: {
+                title: 'Visión Estratégica',
+                text: 'Comités estratégicos activos con influencia en innovación, tecnología y estrategia de mercado'
+            },
+            card2: {
+                title: 'Cultura de Resultados',
+                text: 'Ética, responsabilidad y compromiso con la generación de valor para todos los stakeholders'
+            },
+            card3: {
+                title: 'Crecimiento Sostenible',
+                text: 'Alianzas a largo plazo construyendo empresas hechas para durar a través de la innovación continua'
+            }
+        },
+        portfolio: {
+            title: 'Portfolio de Inversiones',
+            subtitle: 'Empresas innovadoras transformando sus mercados',
+            filter: {
+                all: 'Todas',
+                fintech: 'Fintech',
+                saas: 'SaaS',
+                ecommerce: 'E-commerce',
+                tech: 'Tecnología'
+            }
+        },
+        team: {
+            title: 'Quiénes Somos',
+            role: 'Fundador y Emprendedor',
+            bio1: 'Fundador de Nexaas con más de 35 años en la industria del software y la tecnología.',
+            bio2: 'Construyó Mastersaf, adquirida por Thomson Reuters en 2011, y es inversionista en más de 30 empresas de tecnología.',
+            bio3: 'Trabajó con SERPRO en la implementación del Impuesto sobre la Renta informatizado y con FGV para el lanzamiento nacional de IN68/IN65.'
+        },
+        contact: {
+            title: '¿Conversamos?',
+            subtitle: 'Póngase en contacto para discutir cómo podemos acelerar el crecimiento de su negocio',
+            form: {
+                name: 'Nombre',
+                company: 'Empresa',
+                email: 'E-mail',
+                phone: 'Teléfono',
+                message: 'Mensaje',
+                submit: 'Enviar Mensaje'
+            }
+        },
+        footer: {
+            copyright: '© 2025 Martinus Capital. Todos los derechos reservados.'
+        }
+    }
+};
+
+// Portfolio data
+const portfolioData = [
+    { "name": "Fintera", "category": "fintech", "description": "Plataforma integrada para gestão financeira", "url": "fintera.com.br", "logo": "images/logos/logo-fintera.png" },
+    { "name": "2Sale", "category": "software", "description": "Soluções em gestão, vendas e processos", "url": "2sale.com.br", "logo": "images/logos/2sale-logo.png" },
+    { "name": "ZeeDog", "category": "ecommerce", "description": "Produtos de expressão para pets", "url": "zeedog.com.br", "logo": "images/logos/logo-zeedog.svg" },
+    { "name": "Nexaas", "category": "saas", "description": "Tecnologia para varejo com OMS e gestão", "url": "nexaas.com", "logo": "images/logos/logo-nexaas.png" },
+    { "name": "Contabilone", "category": "fiscal", "description": "Plataforma de inteligência tributária", "url": "contabilone.com", "logo": "images/logos/logo-contabilone.svg" },
+    { "name": "Builtcode", "category": "software", "description": "Fábrica de software e IA", "url": "builtcode.com.br", "logo": "images/logos/logo-builtcode.png" },
+    { "name": "LiveCapital", "category": "fintech", "description": "Gerenciador universal de investimentos", "url": "livecapital.com.br", "logo": "images/logos/logo-livecapital-v2.png" },
+    { "name": "Signa", "category": "ecommerce", "description": "Plataformas de e-commerce e marketplace", "url": "signativa.com.br", "logo": "images/logos/logo-signa.png" },
+    { "name": "Taxi2go", "category": "logistics", "description": "Delivery de mercadorias via táxi", "url": "taxi2go.com.br", "logo": "images/logos/logo-taxi2go2.png" },
+    { "name": "LetsSign", "category": "saas", "description": "Assinatura digital e gestão de documentos", "url": "letssign.com.br", "logo": "images/logos/logo-letssign-v2.png" },
+    { "name": "TDMI Consulting", "category": "consulting", "description": "Consultoria empresarial e tributária", "url": "", "logo": "images/logos/logo-tdmi.jpg" },
+    { "name": "4Asset", "category": "real-estate", "description": "Governança de ativos imóveis", "url": "", "logo": "images/logos/logo-4asset.png" },
+    { "name": "Bysoft", "category": "saas", "description": "Gestão de processos de comércio exterior", "url": "bysoft.com.br", "logo": "images/logos/logo-bysoft.png" },
+    { "name": "Increazy", "category": "ecommerce", "description": "Checkout e gestão de assinaturas", "url": "increazy.com", "logo": "images/logos/logo-increazy.svg" },
+    { "name": "Aliz Evolução Fiscal", "category": "fiscal", "description": "Consultoria e compliance fiscal", "url": "", "logo": "images/logos/logo-aliz.jpg" },
+    { "name": "Cassis Capital", "category": "investments", "description": "Investimentos em software B2B", "url": "cassiscapital.com.br", "logo": "images/logos/logo-cassiscapital.png" },
+    { "name": "Canal da Peça", "category": "ecommerce", "description": "Marketplace de peças automotivas", "url": "canaldapeca.com.br", "logo": "images/logos/logo-canaldapeca.jpg" },
+    { "name": "Engelink", "category": "saas", "description": "Plataforma de contratação para construção civil", "url": "engelink.com.br", "logo": "images/logos/logo-engelink.svg" },
+    { "name": "Gett", "category": "saas", "description": "Gestão para importadoras e exportadoras", "url": "gett.com.br", "logo": "images/logos/logo-gett.png" },
+    { "name": "JExperts", "category": "saas", "description": "Plataforma de gestão estratégica integrada", "url": "jexperts.com.br", "logo": "images/logos/logo-jexperts.jpeg" },
+    { "name": "KöliCapital", "category": "investments", "description": "Assessoria de investimentos global", "url": "kolicapital.com", "logo": "images/logos/logo-kolicapital.png" },
+    { "name": "MasterSaf", "category": "fiscal", "description": "Software fiscal e tributário", "url": "", "logo": "images/logos/logo-mastersaf.jpg" },
+    { "name": "Taxweb", "category": "fiscal", "description": "Soluções para compliance fiscal", "url": "", "logo": "images/logos/logo-taxweb.png" },
+    { "name": "LinkAPI", "category": "software", "description": "Plataforma de desenvolvimento de APIs", "url": "linkapisolutions.gupy.io", "logo": "images/logos/logo-linkapi.svg" },
+    { "name": "Ploomes", "category": "crm", "description": "CRM e automação de vendas", "url": "ploomes.com", "logo": "images/logos/logo-ploomes.png" },
+    { "name": "metaKosmos", "category": "web3", "description": "Tecnologias Web3 e metaverso", "url": "metakosmos.com.br", "logo": "images/logos/logo-metakosmos.png" },
+    { "name": "Collection", "category": "ecommerce", "description": "Conexão entre arquitetos e indústria", "url": "collection.com.br", "logo": "images/logos/COLLECTION_NOME-PRETO.png" },
+    { "name": "Listme", "category": "saas", "description": "Gestão de catalogação para e-commerce", "url": "listme.io", "logo": "images/logos/ListMe-preto-logo.png" },
+    { "name": "Automizei", "category": "retail", "description": "Transformação em lojas autônomas 24x7", "url": "automizei.com", "logo": "images/logos/automizei-logo.svg" },
+    { "name": "RemedioWeb", "category": "health", "description": "Drogaria digital especializada em cuidadores", "url": "remedioweb.com.br", "logo": "images/logos/remedioweb-logo.png" },
+    { "name": "Neopro", "category": "retail", "description": "Gestão de desempenho de vendas", "url": "neopro.com.br", "logo": "images/logos/neopro-logo.png" }
+];
+
+// =================================
+// CAROUSEL FUNCTIONS
+// =================================
+
+let currentSlide = 0;
+let autoplayInterval;
+
+// Detectar mobile
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+// Número de logos por slide baseado no dispositivo
+function getLogosPerSlide() {
+    return isMobile() ? 2 : 5;
+}
+
+// Embaralhar array
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+// Inicializar carrossel
+function initCarousel() {
+    const shuffled = shuffleArray(portfolioData);
+    const track = document.getElementById('carouselTrack');
+    const dots = document.getElementById('carouselDots');
+    
+    if (!track || !dots) return;
+    
+    const logosPerSlide = getLogosPerSlide();
+    
+    // Calcular número de slides
+    const totalSlides = Math.ceil(shuffled.length / logosPerSlide);
+    
+    // Criar slides
+    let slidesHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+        const start = i * logosPerSlide;
+        const end = start + logosPerSlide;
+        const slideLogos = shuffled.slice(start, end);
+        
+        slidesHTML += '<div class="carousel-slide">';
+        slideLogos.forEach(company => {
+            const url = company.url ? `https://${company.url}` : '';
+            slidesHTML += `
+                <div class="logo-item" data-url="${url}" data-clicked="false">
+                    <img src="${company.logo}" alt="${company.name}" 
+                         onerror="this.style.display='none'">
+                </div>
+            `;
+        });
+        slidesHTML += '</div>';
+    }
+    track.innerHTML = slidesHTML;
+    
+    // Adicionar eventos de click nas logos
+    document.querySelectorAll('.logo-item').forEach(item => {
+        item.addEventListener('click', handleLogoClick);
+    });
+    
+    // Criar dots
+    dots.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('span');
+        dot.className = `dot ${i === 0 ? 'active' : ''}`;
+        dot.onclick = () => goToSlide(i);
+        dots.appendChild(dot);
+    }
+    
+    // Iniciar autoplay
+    startAutoplay();
+}
+
+// Função para lidar com cliques nas logos
+function handleLogoClick(e) {
+    const logoItem = e.currentTarget;
+    const url = logoItem.getAttribute('data-url');
+    const wasClicked = logoItem.getAttribute('data-clicked') === 'true';
+    const img = logoItem.querySelector('img');
+    
+    if (!wasClicked) {
+        // Primeiro clique: colorir a logo
+        img.style.filter = 'grayscale(0%)';
+        img.style.opacity = '1';
+        img.style.transform = 'scale(1.05)';
+        logoItem.setAttribute('data-clicked', 'true');
+    } else {
+        // Segundo clique: abrir o site
+        if (url) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+        } else {
+            // Se não tem URL, volta ao estado inicial
+            img.style.filter = 'grayscale(100%)';
+            img.style.opacity = '0.6';
+            img.style.transform = 'scale(1)';
+            logoItem.setAttribute('data-clicked', 'false');
+        }
+    }
+}
+
+// Mover slide
+function moveSlide(direction) {
+    const track = document.getElementById('carouselTrack');
+    if (!track) return;
+    
+    const totalSlides = track.children.length;
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+// Ir para slide específico
+function goToSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+}
+
+// Atualizar carrossel
+function updateCarousel() {
+    const track = document.getElementById('carouselTrack');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (!track) return;
+    
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+// Autoplay
+function startAutoplay() {
+    autoplayInterval = setInterval(() => moveSlide(1), 4000);
+}
+
+function stopAutoplay() {
+    clearInterval(autoplayInterval);
+}
+
+// =================================
+// LANGUAGE SWITCHER
+// =================================
+
+function changeLanguage(lang) {
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = translations[lang];
+        keys.forEach(k => value = value[k]);
+        
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = value;
+        } else {
+            el.textContent = value;
+        }
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.lang === lang) {
+            btn.classList.add('active');
+        }
+    });
+}
+
+// =================================
+// INITIALIZATION
+// =================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Inicializar carrossel
+    initCarousel();
+    
+    // Language switcher
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            changeLanguage(this.dataset.lang);
+        });
+    });
+    
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+    });
+    
+    // Mobile menu
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', function() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks) {
+                navLinks.classList.toggle('active');
+            }
+        });
+    }
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const navLinks = document.getElementById('navLinks');
+                if (navLinks) {
+                    navLinks.classList.remove('active');
+                }
+            }
+        });
+    });
+    
+    // Pausar carousel ao passar o mouse
+    const carouselContainer = document.querySelector('.carousel-container');
+    if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', stopAutoplay);
+        carouselContainer.addEventListener('mouseleave', startAutoplay);
+        
+        // Touch para mobile
+        let touchStartX = 0;
+        carouselContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+        
+        carouselContainer.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                moveSlide(diff > 0 ? 1 : -1);
+            }
+        });
+    }
+    
+    // Navegação por teclado
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') moveSlide(-1);
+        if (e.key === 'ArrowRight') moveSlide(1);
+    });
+    
+    // Reinicializar carousel ao redimensionar tela
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            currentSlide = 0;
+            initCarousel();
+        }, 250);
+    });
+    
+});
+    </script>
+
+</body>
+</html>
