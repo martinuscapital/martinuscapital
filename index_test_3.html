@@ -370,133 +370,51 @@ section {
     background: var(--light-bg);
 }
 
-/* Carousel Simples */
-.carousel-wrapper {
-    position: relative;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.carousel-container {
-    overflow: hidden;
-    padding: 20px 0;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.4s ease;
-    align-items: center;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: 40px;
-    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .logo-item {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80px;
+    min-height: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .logo-item:hover {
     background: rgba(0, 180, 216, 0.05);
+    transform: translateY(-5px);
 }
 
 .logo-item:active {
     transform: scale(0.95);
 }
 
-.logo-item[data-clicked="true"]::before {
-    content: '👆';
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    font-size: 20px;
-    animation: pulse-emoji 1s ease-in-out infinite;
-}
-
-@keyframes pulse-emoji {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-}
-
 .logo-item img {
     max-width: 180px;
     max-height: 80px;
-    width: auto;
+    width: 100%;
     height: auto;
     object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.6;
     transition: all 0.3s ease;
-    pointer-events: none;
 }
 
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.1);
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: #666;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.carousel-arrow:hover {
-    background: var(--cyan-bright);
-    color: var(--off-white);
-}
-
-.carousel-arrow.prev {
-    left: -50px;
-}
-
-.carousel-arrow.next {
-    right: -50px;
-}
-
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #d1d5db;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active {
-    background: var(--cyan-bright);
-}
-
-.dot:hover {
-    background: var(--cyan-accent);
+.logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .filter-buttons {
@@ -691,7 +609,7 @@ section {
 
 .pillars-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
 }
 
@@ -1259,21 +1177,119 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .metrics-grid {
-        grid-template-columns: 1fr;
+    /* Portfolio Grid Mobile */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px 10px;
     }
 
-    .csc-final-cta {
-        padding: 40px 20px;
+    .logo-item {
+        min-height: 80px;
+        padding: 15px;
     }
 
-    .csc-final-cta h3 {
-        font-size: 24px;
+    .logo-item img {
+        max-width: 120px;
+        max-height: 60px;
     }
+}
 
-    .csc-final-cta p {
-        font-size: 18px;
+/* Modal de Feedback */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
     }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.modal-icon.success {
+    color: #28a745;
+}
+
+.modal-icon.error {
+    color: #dc3545;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--navy-blue);
+}
+
+.modal-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.modal-email {
+    color: var(--gold);
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+}
+
+.modal-email:hover {
+    text-decoration: underline;
+}
+
+.modal-button {
+    background: var(--gold);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.modal-button:hover {
+    background: #c9a961;
+    transform: translateY(-2px);
 }
 
     </style>
@@ -1324,7 +1340,7 @@ footer {
         }
     }
     </script>
-    
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -1339,7 +1355,7 @@ footer {
         }
     }
     </script>
-    
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -1441,7 +1457,7 @@ footer {
                 <!-- Hero CSC -->
                 <div class="csc-hero">
                     <span class="csc-badge">Centro Administrativo Compartilhado</span>
-                    <h2 id="csc-title" class="section-title">Marinus Capital CSC</h2>
+                    <h2 id="csc-title" class="section-title">Martinus Capital CSC</h2>
                     <p class="section-subtitle">Governança, eficiência e tecnologia para acelerar o crescimento do nosso portfólio</p>
                     <div class="csc-cta-group">
                         <a href="#contact" class="btn btn-primary">Fale com o Time</a>
@@ -1451,7 +1467,7 @@ footer {
 
                 <!-- Visão Geral -->
                 <div class="csc-overview">
-                    <p>Na Marinus Capital, oferecemos às empresas do nosso ecossistema um <strong>Centro Administrativo Compartilhado (CSC)</strong> que integra jurídico, contábil, financeiro/administrativo e dados/automação. Nosso objetivo é padronizar rotinas críticas, reduzir custos e elevar a qualidade operacional com suporte especializado e tecnologia de ponta.</p>
+                    <p>Na Martinus Capital, oferecemos às empresas do nosso ecossistema um <strong>Centro Administrativo Compartilhado (CSC)</strong> que integra jurídico, contábil, financeiro/administrativo e dados/automação. Nosso objetivo é padronizar rotinas críticas, reduzir custos e elevar a qualidade operacional com suporte especializado e tecnologia de ponta.</p>
                 </div>
 
                 <!-- Pilares de Serviço -->
@@ -1560,7 +1576,7 @@ footer {
                     </div>
 
                     <div class="benefits-column">
-                        <h3 class="csc-section-title">Diferenciais Marinus</h3>
+                        <h3 class="csc-section-title">Diferenciais Martinus</h3>
                         <ul class="benefits-list">
                             <li>⭐ Time multidisciplinar com playbooks testados</li>
                             <li>⭐ Stack tecnológica integrada</li>
@@ -1595,7 +1611,7 @@ footer {
                 <!-- CTA Final -->
                 <div class="csc-final-cta">
                     <h3>Quer levar eficiência e previsibilidade para a operação da sua empresa?</h3>
-                    <p>Entre em contato com o CSC Marinus Capital</p>
+                    <p>Entre em contato com o CSC Martinus Capital</p>
                     <a href="#contact" class="btn btn-primary">Fale Conosco</a>
                 </div>
             </div>
@@ -1606,18 +1622,10 @@ footer {
         <section id="portfolio" class="portfolio">
             <div class="container">
                 <h2 class="section-title" data-i18n="portfolio.title">Portfolio de Investimentos</h2>
-                
-                <div class="carousel-wrapper">
-                    <button class="carousel-arrow prev" onclick="moveSlide(-1)">‹</button>
-                    <div class="carousel-container">
-                        <div class="carousel-track" id="carouselTrack"></div>
-                    </div>
-                    <button class="carousel-arrow next" onclick="moveSlide(1)">›</button>
-                </div>
-                
-                <div class="carousel-dots" id="carouselDots"></div>
+
+                <div class="portfolio-grid" id="portfolioGrid"></div>
             </div>
-        </section>>
+        </section>
 
         <!-- Team Section -->
         <section id="team" class="team" aria-labelledby="team-title">
@@ -1653,27 +1661,27 @@ footer {
                 <p class="section-subtitle" data-i18n="contact.subtitle">Entre em contato para discutir como podemos acelerar o crescimento do seu negócio</p>
                 
                 <div class="contact-form">
-                    <form aria-label="Formulário de contato">
+                    <form aria-label="Formulário de contato" method="POST">
                         <div class="form-grid">
                             <div class="form-group">
                                 <label data-i18n="contact.form.name" for="name">Nome</label>
-                                <input type="text" id="name" name="name" required aria-required="true">
+                                <input type="text" id="name" name="Nome" required aria-required="true">
                             </div>
                             <div class="form-group">
                                 <label data-i18n="contact.form.company" for="company">Empresa</label>
-                                <input type="text" id="company" name="company" required aria-required="true">
+                                <input type="text" id="company" name="Empresa" required aria-required="true">
                             </div>
                             <div class="form-group">
                                 <label data-i18n="contact.form.email" for="email">E-mail</label>
-                                <input type="email" id="email" name="email" required aria-required="true">
+                                <input type="email" id="email" name="E-mail" required aria-required="true">
                             </div>
                             <div class="form-group">
                                 <label data-i18n="contact.form.phone" for="phone">Telefone</label>
-                                <input type="tel" id="phone" name="phone" required aria-required="true">
+                                <input type="tel" id="phone" name="Telefone" required aria-required="true">
                             </div>
                             <div class="form-group full">
                                 <label data-i18n="contact.form.message" for="message">Mensagem</label>
-                                <textarea id="message" name="message" required aria-required="true"></textarea>
+                                <textarea id="message" name="Mensagem" required aria-required="true"></textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn-submit" data-i18n="contact.form.submit" aria-label="Enviar formulário de contato">Enviar Mensagem</button>
@@ -1916,7 +1924,7 @@ const portfolioData = [
     { "name": "2Sale", "category": "software", "description": "Soluções em gestão, vendas e processos", "url": "2sale.com.br", "logo": "images/logos/2sale-logo.png" },
     { "name": "ZeeDog", "category": "ecommerce", "description": "Produtos de expressão para pets", "url": "zeedog.com.br", "logo": "images/logos/logo-zeedog.svg" },
     { "name": "Nexaas", "category": "saas", "description": "Tecnologia para varejo com OMS e gestão", "url": "nexaas.com", "logo": "images/logos/logo-nexaas.png" },
-    { "name": "Contabilone", "category": "fiscal", "description": "Plataforma de inteligência tributária", "url": "contabilone.com", "logo": "images/logos/logo-contabilone.svg" },
+    { "name": "Omnitax", "category": "fiscal", "description": "Simplifique sua gestão tributária", "url": "omnitax.ai", "logo": "images/logos/logo-omnitax.png" },
     { "name": "Builtcode", "category": "software", "description": "Fábrica de software e IA", "url": "builtcode.com.br", "logo": "images/logos/logo-builtcode.png" },
     { "name": "LiveCapital", "category": "fintech", "description": "Gerenciador universal de investimentos", "url": "livecapital.com.br", "logo": "images/logos/logo-livecapital-v2.png" },
     { "name": "Signa", "category": "ecommerce", "description": "Plataformas de e-commerce e marketplace", "url": "signativa.com.br", "logo": "images/logos/logo-signa.png" },
@@ -1957,137 +1965,35 @@ function isMobile() {
     return window.innerWidth <= 768;
 }
 
-// Número de logos por slide baseado no dispositivo
-function getLogosPerSlide() {
-    return isMobile() ? 2 : 5;
-}
+// PORTFOLIO GRID FUNCTIONS
+// =================================
 
-// Embaralhar array
-function shuffleArray(array) {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-}
+// Inicializar grid de portfolio
+function initPortfolioGrid() {
+    const grid = document.getElementById('portfolioGrid');
 
-// Inicializar carrossel
-function initCarousel() {
-    const shuffled = shuffleArray(portfolioData);
-    const track = document.getElementById('carouselTrack');
-    const dots = document.getElementById('carouselDots');
-    
-    if (!track || !dots) return;
-    
-    const logosPerSlide = getLogosPerSlide();
-    
-    // Calcular número de slides
-    const totalSlides = Math.ceil(shuffled.length / logosPerSlide);
-    
-    // Criar slides
-    let slidesHTML = '';
-    for (let i = 0; i < totalSlides; i++) {
-        const start = i * logosPerSlide;
-        const end = start + logosPerSlide;
-        const slideLogos = shuffled.slice(start, end);
-        
-        slidesHTML += '<div class="carousel-slide">';
-        slideLogos.forEach(company => {
-            const url = company.url ? `https://${company.url}` : '';
-            slidesHTML += `
-                <div class="logo-item" data-url="${url}" data-clicked="false">
-                    <img src="${company.logo}" alt="${company.name}" 
-                         onerror="this.style.display='none'">
-                </div>
-            `;
-        });
-        slidesHTML += '</div>';
-    }
-    track.innerHTML = slidesHTML;
-    
-    // Adicionar eventos de click nas logos
-    document.querySelectorAll('.logo-item').forEach(item => {
-        item.addEventListener('click', handleLogoClick);
+    if (!grid) return;
+
+    let gridHTML = '';
+    portfolioData.forEach(company => {
+        const url = company.url ? `https://${company.url}` : '';
+        gridHTML += `
+            <div class="logo-item" data-url="${url}" onclick="handleLogoClick(this)">
+                <img src="${company.logo}" alt="${company.name}"
+                     onerror="this.style.display='none'">
+            </div>
+        `;
     });
-    
-    // Criar dots
-    dots.innerHTML = '';
-    for (let i = 0; i < totalSlides; i++) {
-        const dot = document.createElement('span');
-        dot.className = `dot ${i === 0 ? 'active' : ''}`;
-        dot.onclick = () => goToSlide(i);
-        dots.appendChild(dot);
-    }
-    
-    // Iniciar autoplay
-    startAutoplay();
+    grid.innerHTML = gridHTML;
 }
 
 // Função para lidar com cliques nas logos
-function handleLogoClick(e) {
-    const logoItem = e.currentTarget;
+function handleLogoClick(logoItem) {
     const url = logoItem.getAttribute('data-url');
-    const wasClicked = logoItem.getAttribute('data-clicked') === 'true';
-    const img = logoItem.querySelector('img');
-    
-    if (!wasClicked) {
-        // Primeiro clique: colorir a logo
-        img.style.filter = 'grayscale(0%)';
-        img.style.opacity = '1';
-        img.style.transform = 'scale(1.05)';
-        logoItem.setAttribute('data-clicked', 'true');
-    } else {
-        // Segundo clique: abrir o site
-        if (url) {
-            window.open(url, '_blank', 'noopener,noreferrer');
-        } else {
-            // Se não tem URL, volta ao estado inicial
-            img.style.filter = 'grayscale(100%)';
-            img.style.opacity = '0.6';
-            img.style.transform = 'scale(1)';
-            logoItem.setAttribute('data-clicked', 'false');
-        }
+
+    if (url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
     }
-}
-
-// Mover slide
-function moveSlide(direction) {
-    const track = document.getElementById('carouselTrack');
-    if (!track) return;
-    
-    const totalSlides = track.children.length;
-    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-    updateCarousel();
-}
-
-// Ir para slide específico
-function goToSlide(index) {
-    currentSlide = index;
-    updateCarousel();
-}
-
-// Atualizar carrossel
-function updateCarousel() {
-    const track = document.getElementById('carouselTrack');
-    const dots = document.querySelectorAll('.dot');
-    
-    if (!track) return;
-    
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentSlide);
-    });
-}
-
-// Autoplay
-function startAutoplay() {
-    autoplayInterval = setInterval(() => moveSlide(1), 4000);
-}
-
-function stopAutoplay() {
-    clearInterval(autoplayInterval);
 }
 
 // =================================
@@ -2117,14 +2023,111 @@ function changeLanguage(lang) {
     });
 }
 
+ // =================================
+ // EMAIL FUNCTION
+ // =================================
+
+ // Função para mostrar o modal
+ function showModal(type, title, message, email = null) {
+     const modal = document.getElementById('feedbackModal');
+     const icon = document.getElementById('modalIcon');
+     const titleEl = document.getElementById('modalTitle');
+     const messageEl = document.getElementById('modalMessage');
+     const emailEl = document.getElementById('modalEmail');
+
+     // Define o ícone
+     icon.textContent = type === 'success' ? '✓' : '✕';
+     icon.className = `modal-icon ${type}`;
+
+     // Define o conteúdo
+     titleEl.textContent = title;
+     messageEl.textContent = message;
+
+     // Mostra ou esconde o email
+     if (email) {
+         emailEl.textContent = email;
+         emailEl.href = `mailto:${email}`;
+         emailEl.style.display = 'block';
+     } else {
+         emailEl.style.display = 'none';
+     }
+
+     // Mostra o modal
+     modal.classList.add('active');
+ }
+
+ // Função para fechar o modal
+ function closeModal() {
+     const modal = document.getElementById('feedbackModal');
+     modal.classList.remove('active');
+ }
+
+ async function enviarFormulario(event) {
+     event.preventDefault(); // Previne o comportamento padrão do formulário
+
+     const form = event.target;
+     const submitButton = form.querySelector('.btn-submit');
+     const buttonOriginalText = submitButton.textContent;
+
+     // Desabilita o botão durante o envio
+     submitButton.disabled = true;
+     submitButton.textContent = 'Enviando...';
+
+     // Coleta os dados do formulário
+     const formData = {
+         nome: form.querySelector('#name').value,
+         empresa: form.querySelector('#company').value,
+         email: form.querySelector('#email').value,
+         telefone: form.querySelector('#phone').value,
+         mensagem: form.querySelector('#message').value,
+         dataEnvio: new Date().toISOString()
+     };
+
+     try {
+         // Envia para o webhook do n8n
+         const response = await fetch('https://n8n-assistant-n8n-webhook.nfnsqd.easypanel.host/webhook/e03e6168-b373-4110-8312-46aaf918459a', {
+             method: 'POST',
+             headers: {
+                 'Content-Type': 'application/json',
+             },
+             body: JSON.stringify(formData)
+         });
+
+         if (response.ok) {
+             // Sucesso
+             showModal(
+                 'success',
+                 'Contato Enviado!',
+                 'Sua mensagem foi enviada com sucesso. Nossa equipe entrará em contato em breve.'
+             );
+             form.reset(); // Limpa o formulário
+         } else {
+             throw new Error('Erro ao enviar mensagem');
+         }
+
+     } catch (error) {
+         console.error('Erro:', error);
+         showModal(
+             'error',
+             'Erro ao Enviar Formulário',
+             'Houve um erro ao enviar sua mensagem. Por favor, entre em contato diretamente pelo e-mail:',
+             'financeiro@martinuscapital.com.br'
+         );
+     } finally {
+         // Reabilita o botão
+         submitButton.disabled = false;
+         submitButton.textContent = buttonOriginalText;
+     }
+ }
+
 // =================================
 // INITIALIZATION
 // =================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Inicializar carrossel
-    initCarousel();
+
+    // Inicializar grid de portfolio
+    initPortfolioGrid();
     
     // Language switcher
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -2171,46 +2174,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Pausar carousel ao passar o mouse
-    const carouselContainer = document.querySelector('.carousel-container');
-    if (carouselContainer) {
-        carouselContainer.addEventListener('mouseenter', stopAutoplay);
-        carouselContainer.addEventListener('mouseleave', startAutoplay);
-        
-        // Touch para mobile
-        let touchStartX = 0;
-        carouselContainer.addEventListener('touchstart', (e) => {
-            touchStartX = e.touches[0].clientX;
-        });
-        
-        carouselContainer.addEventListener('touchend', (e) => {
-            const touchEndX = e.changedTouches[0].clientX;
-            const diff = touchStartX - touchEndX;
-            
-            if (Math.abs(diff) > 50) {
-                moveSlide(diff > 0 ? 1 : -1);
-            }
-        });
+    const form = document.querySelector('.contact-form form');
+    if (form) {
+        form.addEventListener('submit', enviarFormulario);
     }
+
+    // Reinicializar grid ao redimensionar tela (não é mais necessário)
     
-    // Navegação por teclado
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') moveSlide(-1);
-        if (e.key === 'ArrowRight') moveSlide(1);
     });
-    
-    // Reinicializar carousel ao redimensionar tela
-    let resizeTimeout;
-    window.addEventListener('resize', function() {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(function() {
-            currentSlide = 0;
-            initCarousel();
-        }, 250);
-    });
-    
-});
     </script>
+
+    <!-- Modal de Feedback -->
+    <div id="feedbackModal" class="modal-overlay">
+        <div class="modal-content">
+            <div id="modalIcon" class="modal-icon"></div>
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <p id="modalMessage" class="modal-message"></p>
+            <a id="modalEmail" class="modal-email" style="display: none;"></a>
+            <button class="modal-button" onclick="closeModal()">OK</button>
+        </div>
+    </div>
 
 </body>
 </html>
